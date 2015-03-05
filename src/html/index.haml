@@ -1,0 +1,33 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            .t MINDPIN 团队工作简报
+
+    .main
+      .container-full
+        .row
+          .col-pad-12
+            .briefings
+              .briefing
+                .date
+                  %i.fa.fa-file
+                  %span 2013.03.05 Thu.
+                  %a{:href => './briefing/20150305.html'} 查看简报页
+
+              .briefing
+                .date 
+                  %i.fa.fa-file-excel-o
+                  %span 2013.03.02 Mon.
+                  %a{:href => 'http://oss.aliyuncs.com/pie-documents/20150305/2015年3月2日简报.xls', :target => '_blank'} 下载 EXCEL 文件
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}

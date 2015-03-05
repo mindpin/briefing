@@ -1,0 +1,3 @@
+[submodule "src/lily"]
+	path = src/lily
+	url = git://github.com/mindpin/lily.git

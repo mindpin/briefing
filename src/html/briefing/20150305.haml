@@ -1,0 +1,243 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            .t 2013年3月5日，周四，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+              完成了微博邀请功能的迭代和部署。需要完成以下三项工作：1. UI调整；2. 玩法研究；3. 场景设计；之后，再继续接下来的新的 feature 的开发
+
+            %td 进行 feature: 微博邀请 的需求描述，任务分解和实现验收工作
+            %td 
+              %span 收集用于投票游戏场景DEMO的微博名人数据信息。
+              %a{:href => 'http://s.4ye.me/GwXe6j'} http://s.4ye.me/GwXe6j
+            %td
+            %td 进行 feature: 微博邀请 的开发以及 bugfix
+            %td.waiting 
+              %span 完成了投票游戏场景的两轮迭代，需要跟进
+              %a{:href => 'https://github.com/arlyxiao/touch-vote-demo'} https://github.com/arlyxiao/touch-vote-demo
+            %td
+              %span 撰写投票游戏场景的需求以及进行任务分配
+              %hr
+              %span.danger 计划修改UI，由于时间原因推进相当迟缓
+          %tr
+            %td.thread 运营
+            %td.summary
+              %span 需要构思新的玩法，和基于目前状态开发新的加强体验的demo
+            %td.continue 
+              %span 把 pinIdea 的访问链接通过微博和微信发给少两人试用。目前暂没有得到回应。
+              %hr
+              %span 和夏实围绕运营和场景设计方面进行了一些讨论。持续时间较久。目前没有全部整理完毕。
+              %hr
+              %span 准备用于场景展示的例子。目前准备了一部分，还差一部分。
+            %td.continue
+              %span 配合吴笛讨论运营方案和场景。
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具
+            %td.summary
+              %span 保持半周报持续进行的同时，继续提炼需求；继续研究更节约时间的记录跟踪方法。
+            %td
+            %td.continue
+              %span 对三款团队协作工具进行使用体验研究。目前已经完成明道的部分。工作还在持续中。
+              %a{:href => 'http://s.4ye.me/Ps0XF1'} http://s.4ye.me/Ps0XF1
+            %td.continue
+              %span 开始开发用于简化每日工作状态记录的工具。这是一个用于填空的持续任务。
+              %a{:href => 'http://s.4ye.me/yf73Uf'} http://s.4ye.me/yf73Uf
+            %td
+            %td
+            %td
+              %span 撰写任务记录工具的需求以及进行任务分配
+              %hr
+              %span 设计简报模板
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary
+              %span 数据采集工作一直在保持。但是数据分析场景开发工作需要跟进。
+            %td
+            %td
+            %td.waiting 完成了全文搜索API的编写以及部署。需要跟进
+            %td
+            %td
+            %td.danger 计划编写统计工具前端，但由于时间因素基本没有推进。
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary
+              %span 需要进一步考虑与其他场景的结合方式。
+            %td
+            %td
+            %td
+            %td
+            %td.waiting
+              %span 完成了 ImChatParser 库的第一轮迭代，需要跟进
+              %a{:href => 'https://github.com/arlyxiao/im-chat-parser'} https://github.com/arlyxiao/im-chat-parser
+            %td
+              %span 撰写收藏夹组件的需求以及进行任务分配
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary
+              %span 需要提炼场景范例，做运营推进。
+            %td.danger 整理汉化组工作流程。目前还没有产生提交物。
+            %td
+            %td
+            %td 编写通用自定义收藏夹组件原型。这是一个用于填空的任务。
+            %td
+            %td.danger 计划修改页面内容以通过新浪微博应用审核。实际没有推进。 
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary
+              %span 一些任务安排需要更提前进行。
+            %td 结合李飞录制的视频，对实习生进行了虚拟机安装，linux 配置，sublime 安装配置相关的讲解
+            %td
+            %td 负责每日的集中答疑。
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 其他杂项记录
+            %td.summary
+            %td 花了一些时间整理团队银行卡号信息
+            %td 请假一天
+            %td.continue
+              %span 更新了关于服务器配置和管理方法的一些文档。已经放置在 docs.4ye.me
+              %hr
+              %span 正在规划 linode 服务器进程监控的API和实现监控页面
+              %hr
+              %span 计划花时间熟悉目前正在使用的前端 css 实践
+              %hr
+              %span 协助宋亮进行了一些任务准备工作
+            %td.continue
+              正计划进行 rails 工程模板标准化方面的工作
+            %td
+            %td 花了一些时间在修正团队工作流程的沟通上
+          %tr
+            %td.summary.bold{:rowspan => 2} 小结
+            %td.summary.bold 状态总结
+            %td.summary
+              %span 接下来的工作还是围绕沟通方法和任务执行验收过程的优化进行。保持持续迭代。
+            %td.summary
+              %span 1. 工作线索较多较细碎（从每日状态确认时的记录文字较多来体现）。但是 GTD 不足。已经进行过沟通；
+              %hr
+              %span 2. 完成了 微博邀请 feature 的本轮迭代；
+              %hr
+              %span 3. 运营方案设计和例子准备工作仍在持续进行；
+            %td.summary
+              %span 完成了一项数据收集工作，目前正在持续进行一些工作。
+            %td.summary
+              %span 工作均良性推进
+            %td.summary
+              %span 工作均良性推进，但是过程跟踪方面还需改进
+            %td.summary
+              %span 任务均能持续GTD，状态很好
+            %td.summary
+              %span 由于管理工作增多，一些具体工作的推进迟缓。
+          %tr
+            %td.summary.bold 工作建议
+            %td.summary
+              %span 1. 给每个人安排用于填空的持续任务
+              %hr
+              %span 2. 减少“漫议”（不可控的讨论）时间；
+              %hr
+              %span 3. 进一步重视每日的具体可见产出物；
+              %hr
+              %SPAN 4. 进一步重视运营推进；
+            %td.summary
+              %span 1. 需要减少每天关注的主线数目，避免在较多的工作之间来回转移，导致推进效率降低。
+              %hr
+              %span 2. 任务描述，需求描述，讨论结果，需要尽快落实成简洁有效的提交物。避免把太多时间花在撰写整理上。
+              %hr
+              %span 3. 一些持续被延误的工作（例如汉化组工作流程整理）。如果缺乏足够的时间完成，建议移出每日计划，或者分配各其他人。
+              %hr
+              %span 4. 需要加强对优先级的调整
+              %hr
+              %span 5. 要减少“讨论”在每日工作时间中占的比重。
+            %td.summary
+              %span 1. 注意作息规律
+              %hr 
+              %span 2. 可以尝试进行更多的围绕需求和体验（包括内容体验）方面的工作
+              %hr
+              %span 3. 可以尝试逐步改进团队 mockup 的设计和展示方法
+            %td.summary
+              %span 1. 后续可以继续关注团队中一系列流程和开发方法标准化的工作
+              %hr
+              %span 2. 保持对实习生培训计划和验收的优化
+            %td.summary
+              %span 1. 把一系列持续任务分批次进行，部署，和验收，以使得迭代更加紧凑；
+              %hr
+              %span 2. 需要及时注意导致后续跟进节奏变化的外因（例如新浪微博接口申请以及吴笛在需求方面的推进）
+            %td.summary
+              %span 需要有意识提升对场景持续演化的关注和思考，其他人应加以配合
+            %td.summary
+              %span 1. 注意作息规律。
+              %hr
+              %span 2. 需要把一些任务主线的持续推进转交出去，避免挂起。
+              %hr
+              %span 3. 尽快把各方面迭代调整到良性状态，以便应对即将到来的压力。
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
