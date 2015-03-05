@@ -11,6 +11,23 @@ body {
     font-size: 16px;
     position:fixed;
     top:0;left:0;right:0;
+
+    .back {
+      display: block;
+      color:#555;
+      background-color: #ddd;
+      float:left;
+      width:32px;height:32px;line-height:32px;
+      margin-top:14px;text-align: center;
+      margin-right: 15px;
+      border-radius:50%;
+      span {display:none;}
+      i {display:block;width:32px;height:32px;line-height:32px;}
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
   }
   .main {
     margin-top: $grid-gap / 2 + 60px;

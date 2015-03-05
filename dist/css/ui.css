@@ -4895,6 +4895,28 @@ body {
     top: 0;
     left: 0;
     right: 0; }
+    body .header .back {
+      display: block;
+      color: #555;
+      background-color: #ddd;
+      float: left;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      margin-top: 14px;
+      text-align: center;
+      margin-right: 15px;
+      border-radius: 50%; }
+      body .header .back span {
+        display: none; }
+      body .header .back i {
+        display: block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px; }
+      body .header .back:hover {
+        color: #333;
+        text-decoration: none; }
   body .main {
     margin-top: 75px;
     font-size: 16px;
