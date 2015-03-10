@@ -135,6 +135,16 @@ body {
       padding:5px;
       border-radius:3px;
     }
+    span.new {
+      &:before {
+        content:"新增";
+        background-color: $new-color;
+        color:white;
+        border-radius:3px;
+        padding:0 5px;
+        margin-right: 5px;
+      }
+    }
   }
 
   td .commits {
