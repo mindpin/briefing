@@ -1,0 +1,360 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2013年3月9日，周一，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      .new-thread
+        .title 本周新增主线：
+        .thread
+          %span.name eshare 区县版：
+          %span 石景山区十所学校 + 教委的 eshare 产品上线工作，截至目前由李飞，宋亮，肖少富参与；
+        .thread
+          %span.name inhouse 人员招募：
+          %span 为今后长期合理应对 inhouse 项目而进行的筹备，截至目前由李飞，宋亮，吴笛参与；
+
+      .delayed-thread
+        .title 本周工作已经/将要滞后的主线：
+        .thread
+          %span.name 斗鱼直播分析工具，
+          %span.name ChatFlow 展示组件，
+          %span.name img4ye
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+              .s 正等待以下三项工作的GTD：
+              .s 1. UI调整；
+              .s 2. 玩法研究；
+              .s 3. 场景设计；
+              .s 之后，再继续接下来的新的 feature 的开发
+            %td.plan
+              %span 改进微博邀请组件，尝试使用官方组件
+            %td 
+            %td
+            %td.plan
+              %span 改进微博邀请组件，尝试使用官方组件
+            %td.waiting
+              %span 完成了投票游戏场景的三轮迭代，需要跟进
+              .commits
+                .commit
+                  .t 工程地址
+                  %a{:href => 'https://github.com/arlyxiao/touch-vote-demo'} https://github.com/arlyxiao/touch-vote-demo
+            %td
+              %span.continue 推进投票游戏场景与 pinIdea 的内化
+              %hr
+              %span.continue 全力修改UI，预计下次周报前完成
+              .commits
+                .commit
+                  .t 工程分支地址
+                  %a{:href => 'https://github.com/mindpin/TouchIdea/tree/new-ui'} https://github.com/mindpin/TouchIdea/tree/new-ui
+          %tr
+            %td.thread 运营
+            %td.summary.plan
+              %span 在几项提交物就绪/补全之后。（见上面的格子）制定运营和迭代计划
+            %td
+              %span pinIdea 的一次简单试水推广
+              .commits
+                .commit
+                  .t 对 pinidea.4ye.me 产品简单试水的思路和执行结果
+                  %a{:href => 'https://github.com/mindpin/TouchIdea/issues/12'} https://github.com/mindpin/TouchIdea/issues/12
+              %hr
+              %span.plan 通过和夏实的围绕热点聚焦产品的推广过程回顾，计划开始确立热点跟踪职责。需要吴笛对想法进行一些简单描述后，通过团队讨论确定该职责的确立，并开始工作提交物跟踪。
+              .commits
+                .commit
+                  .t 原始参考记录文档
+                  %a{:href => 'http://markdown.4ye.me/YNkk1Trw/8'} http://markdown.4ye.me/YNkk1Trw/8
+              %hr
+              %span.continue 准备用于场景展示的9个例子，目前大体构思了3个，细化了1个。
+              .commits
+                .commit
+                  .t 范例构思纲要
+                  %a{:href => 'https://github.com/mindpin/TouchIdea/issues/13'} https://github.com/mindpin/TouchIdea/issues/13
+            %td.continue 
+              %span 开始参与运营推进
+              .commits
+                .commit
+                  .t 热点聚焦产品（类似场景）的心得整理
+                  %a{:href => 'http://markdown.4ye.me/YNkk1Trw/8'} http://markdown.4ye.me/YNkk1Trw/8
+            %td
+            %td
+            %td
+            %td.plan
+              %span 计划帮助推进运营和迭代工作
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary
+              %span 保持半周报持续进行的同时，继续提炼需求；继续研究更节约时间的记录跟踪方法。
+            %td
+            %td.continue
+              %span 对三款团队协作工具进行使用体验研究。目前已经完成明道和 worktile 的部分。工作还在持续中。
+              .commits
+                .commit
+                  .t issue 和提交物跟踪地址
+                  %a{:href => 'http://s.4ye.me/Ps0XF1'} http://s.4ye.me/Ps0XF1
+            %td.continue
+              %span 开发和部署任务状态记录工具。
+              .commits
+                .commit
+                  .t 工程地址
+                  %a{:href => 'https://github.com/mindpin/task-page'} https://github.com/mindpin/task-page
+            %td
+            %td
+            %td.continue
+              %span 持续改进每日状态跟踪和任务简报
+              .commits
+                .commit
+                  .t 简报目录地址
+                  %a{:href => 'http://www.mindpin.com/briefing/'} http://www.mindpin.com/briefing/
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary.delay
+              %span 这条主线目前工作滞后。主要的原因是时间分配不足。由于数据采集服务一直在运行，所以每天都有新采集的数据产生。
+              .commits
+                .commit
+                  .t 数据采集后台
+                  %a{:href => 'http://yuwan.4ye.me/rubymyadmin/'} http://yuwan.4ye.me/rubymyadmin/
+              %hr
+              %span 接下来需要跟进的工作是完成用于展示统计数据的图形化页面。
+            %td
+            %td
+            %td.waiting
+              %span 完成了全文搜索的编写以及部署，需要跟进。
+            %td
+            %td
+            %td.danger
+              %span 计划编写统计工具前端，但由于时间因素基本没有推进。
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary.delay
+              %span 这条主线目前工作滞后。围绕该主线进行的内容准备和体验优化工作由于时间分配不足，目前无法开展。正在比较缓慢地推进 ImChatParser 组件封装工作，用于解析和呈现 IM 工具对话。
+              .commits
+                .commit
+                  .t 公网 DEMO 地址：
+                  %a{:href => 'http://chatflow.4ye.me/'} http://chatflow.4ye.me/
+            %td
+            %td
+            %td
+            %td
+            %td
+              %span.continue 正在进行 ImChatParser 库的改进
+              .commits
+                .commit
+                  .t issue
+                  %a{:href => 'https://github.com/mindpin/chatflow/issues/15'} https://github.com/mindpin/chatflow/issues/15
+                .commit
+                  .t 工程地址
+                  %a{:href => 'https://github.com/arlyxiao/im-chat-parser'} https://github.com/arlyxiao/im-chat-parser
+              %hr
+              %span.plan 计划进行 QQ 对话持久化工具的开发
+              .commits
+                .commit
+                  .t issue
+                  %a{:href => 'https://github.com/mindpin/chatflow/issues/16'} https://github.com/mindpin/chatflow/issues/16
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary.delay
+              %span 这条主线目前工作滞后。目前的风险点是新浪微博应用审核工作缺乏推进。
+              %br
+              %span 由于两次审核仍未通过，需要花更多的时间对应用页面进行调整，但是目前时间分配不足。
+              %br
+              %span 不能通过审核的主要影响是，无法把应用发给更多人试用（由于无法无限制地通过微博登陆）
+              .commits
+                .commit
+                  .t 公网服务地址：
+                  %a{:href => 'http://img.4ye.me/'} http://img.4ye.me/
+            %td.plan
+              %span 整理汉化组工作流程并提交图文报告。由于时间原因目前不能推进。已转入待办计划。
+            %td
+            %td
+            %td.continue
+              %span 开发仿 dribbble buckets 的收藏夹 demo。进行中。完成后需要部署公开演示。
+              .commits
+                .commit
+                  .t 工程地址
+                  %a{:href => "https://github.com/destinyd/buckets_demo"} https://github.com/destinyd/buckets_demo
+            %td
+            %td.danger
+              %span 计划修改页面内容以通过新浪微博应用审核。实际没有推进。
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary.new
+              %span 本周开始启动这条主线工作。目前已经制订了推进计划概要，需要进一步逐条细化。
+              .commits
+                .commit
+                  .t 区县版推进计划概要
+                  %a{:href => 'http://s.4ye.me/l4Abqy'} http://s.4ye.me/l4Abqy
+            %td
+            %td
+            %td
+              %span 进行了开发基准版本的部署。
+              .commits
+                .commit
+                  .t 基准版本访问地址（由内网映射，访问较慢，IP可能会变化。仅用于后续讨论。）
+                  %a{:href => 'http://123.116.48.138:3000'} http://123.116.48.138:3000
+              %hr
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+            %td
+            %td
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+            %td
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary.new 
+              %span 本周开始启动这条主线工作。目前已经通过宋亮，吴笛，李飞的讨论确定了招人的职责，要求以及招人工作推进顺序。
+              .commits
+                .commit
+                  .t 招人工作推进计划概要
+                  %a{:href => 'http://s.4ye.me/FffT3l'} http://s.4ye.me/FffT3l
+            %td.plan
+              %span 计划撰写招募启事，分发招募启事，和收集回应。
+            %td
+            %td.plan
+              %span 计划安排对应聘人员的测试
+            %td
+            %td
+            %td.plan
+              %span 计划安排对应聘人员的测试
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary 实习生的工作状态需要加强专注性，持续性和规律性。
+            %td
+            %td
+            %td 负责每日的集中答疑。负责后续任务安排。
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 其他杂项记录
+            %td.summary
+            %td
+            %td
+            %td.continue
+              %span 正在规划 linode 服务器进程监控的API和实现监控页面
+              %hr
+              %span 计划花时间熟悉目前正在使用的前端 css 实践。目前用于 task-page 的开发。
+            %td.continue 正计划进行 rails 工程模板标准化方面的工作
+            %td
+            %td 主线增多，需要多支付一些用于协调的时间。
+          %tr
+            %td.summary.bold{:rowspan => 2} 小结
+            %td.summary.bold 状态总结
+            %td.summary 在补完迭代条件和提交物的基础上，保持持续迭代。
+            %td.summary 
+              .s 花了大量时间进行工作有序性的梳理，梳理的主要目的是：
+              .s 1. 理顺任务粒度划分；
+              .s 2. 理顺提交物；
+              .s 3. 正确理解所有参与者工作状态。
+            %td.summary
+              .s 目前正在进行产品体验报告撰写工作
+              .s 一些时间用于讨论和场景细化上
+            %td.summary
+              .s 工作均良性推进
+            %td.summary
+              .s 工作均良性推进，但是过程跟踪方面还需改进
+            %td.summary
+              .s 工作均良性推进
+            %td.summary
+              .s 由于管理工作增多，一些具体工作的推进迟缓。
+          %tr
+            %td.summary.bold 工作建议
+            %td.summary 
+              .s 1. 针对每个工作主线，都需要持续形成便于迭代能够继续的提交物
+              .s 2. 需要进一步重视团队内对于任务执行反馈的收集
+              .s 3. 需要增加对于讨论结果导致的可能的工作推进的执行力度
+            %td.summary
+              .s 1. 尽快理顺提交物和资源
+              .s 2. 通过理清任务之间的线索关联来加快推进
+              .s 3. 进一步重视对任务执行反馈的收集
+            %td.summary
+              .s 1. 注意作息规律
+              .s 2. 可以尝试进行更多的围绕需求和体验（包括内容体验）方面的工作
+              .s 3. 可以尝试逐步改进团队 mockup 的设计和展示方法
+            %td.summary
+              .s 1. 后续可以继续关注团队中一系列流程和开发方法标准化的工作
+              .s 2. 保持对实习生培训计划和验收的优化
+            %td.summary
+              .s 需要时刻保持主线任务和填空任务同步进行，如果任务提交状态发生变化，需要吴笛和宋亮进一步的注意。
+            %td.summary
+              .s 需要时刻保持主线任务和填空任务同步进行，如果任务提交状态发生变化，需要李飞和宋亮进一步的注意。
+            %td.summary
+              .s 1. 注意作息规律。
+              .s 2. 需要把一些任务主线的持续推进转交出去，避免挂起。
+              .s 3. 尽快把各方面迭代调整到良性状态，以便应对即将到来的压力。
+              .s 4. 注意时间管理。
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}

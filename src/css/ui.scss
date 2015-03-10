@@ -2,6 +2,9 @@ $fa-font-path: "../../src/lily/fonts" !default;
 
 @import "../lily/css/lily.scss";
 
+$delay-color: #A06700;
+$new-color: $area-success;
+
 body {
   background-color: #fff;
   .header {
@@ -107,15 +110,58 @@ body {
       color: $area-danger;
       background-color: lighten($area-danger, 45%);
       &:before {
-        font-family: FontAwesome;
-        content:"\f071";
+        background-color: $area-danger;
+        color:white;
+        border-radius:3px;
+        padding:0 5px; 
+        content: "风险";
         margin-right:5px;
       }
     }
+    span.plan {
+      &:before {
+        content:"计划进行";
+        background-color: $new-color;
+        color:white;
+        border-radius:3px;
+        padding:0 5px;
+        margin-right: 5px;
+      }
+    }
+    span.continue {
+      background-color: #f2f7f9;
+      color: #3f7faf;
+      display: block;
+      padding:5px;
+      border-radius:3px;
+    }
   }
+
+  td .commits {
+    .commit {
+      font-weight: bold;
+      // background-color: mix(black, darken(#FFFBE3, 10%), 0%);
+      background-color: rgba(black, 0.05);
+      // border-radius: 3px;
+      padding:8px;
+      margin-top:8px;
+      box-shadow:1px 1px 2px rgba(black, 0.2);
+      word-break: break-all;
+
+      a{color: $area-primary;}
+      .t {
+        color: rgba(black, 0.7);
+      }
+      .t:before {
+        content: "\f0c6";
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+    }
+  }
+
   td.summary {
     background-color: $area-dawn;
-    // color: darken($area-dawn, 90%);
   }
   td.thread {
     font-weight: bold;
@@ -123,12 +169,46 @@ body {
   td.bold {
     font-weight: bold;
   }
+
+  td.new {
+    &:before {
+      content:"新增";
+      background-color: $new-color;
+      color:white;
+      border-radius:3px;
+      padding:0 5px;
+      margin-right: 5px;
+    }
+  }
+  td.delay {
+    &:before {
+      content:"滞后";
+      background-color: $delay-color;
+      color: white;
+      border-radius:3px;
+      padding:0 5px; 
+      margin-right: 5px;
+    }
+  }
+  td.plan {
+    &:before {
+      content:"计划进行";
+      background-color: $new-color;
+      color:white;
+      border-radius:3px;
+      padding:0 5px; 
+      margin-right: 5px;
+    }
+  }
   td.danger {
     color: $area-danger;
     background-color: lighten($area-danger, 45%);
     &:before {
-      font-family: FontAwesome;
-      content:"\f071";
+      content: "风险";
+      background-color: $area-danger;
+      color:white;
+      border-radius:3px;
+      padding:0 5px; 
       margin-right:5px;
     }
   }
@@ -140,9 +220,50 @@ body {
     color: $area-dream;
     background-color: lighten($area-dream, 55%);
     &:before {
-      font-family: FontAwesome;
-      content:"\f017";
-      margin-right: 5px;
+      // font-family: FontAwesome;
+      // content:"\f017";
+      background-color: $area-dream;
+      content: "等待跟进";
+      color: white;
+      border-radius:3px;
+      padding:0 5px; 
+      margin-right:5px;
     }
+  }
+}
+
+.new-thread, .delayed-thread {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .thread {
+    margin-bottom: 5px;
+    span.name {font-weight: bold;}
+  }
+}
+.new-thread {
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #ddd;
+  .title:after {
+    content:"新增";
+    background-color: $new-color;
+    color: white;
+    border-radius:3px;
+    padding:0 5px; 
+    text-shadow: 0 0 1px rgba(black, 0.5);
+  }
+}
+
+.delayed-thread {
+  .title:after {
+    content:"滞后";
+    background-color: $delay-color;
+    color: white;
+    border-radius:3px;
+    padding:0 5px; 
   }
 }

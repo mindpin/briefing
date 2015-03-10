@@ -4991,8 +4991,39 @@ body {
     color: #E54028;
     background-color: #fef6f5; }
     .main table td span.danger:before {
+      background-color: #E54028;
+      color: white;
+      border-radius: 3px;
+      padding: 0 5px;
+      content: "风险";
+      margin-right: 5px; }
+  .main table td span.plan:before {
+    content: "计划进行";
+    background-color: #4CC85E;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 5px; }
+  .main table td span.continue {
+    background-color: #f2f7f9;
+    color: #3f7faf;
+    display: block;
+    padding: 5px;
+    border-radius: 3px; }
+  .main table td .commits .commit {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    margin-top: 8px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    word-break: break-all; }
+    .main table td .commits .commit a {
+      color: #2A70E8; }
+    .main table td .commits .commit .t {
+      color: rgba(0, 0, 0, 0.7); }
+    .main table td .commits .commit .t:before {
+      content: "\f0c6";
       font-family: FontAwesome;
-      content: "\f071";
       margin-right: 5px; }
   .main table td.summary {
     background-color: #FFFBE3; }
@@ -5000,12 +5031,36 @@ body {
     font-weight: bold; }
   .main table td.bold {
     font-weight: bold; }
+  .main table td.new:before {
+    content: "新增";
+    background-color: #4CC85E;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 5px; }
+  .main table td.delay:before {
+    content: "滞后";
+    background-color: #A06700;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 5px; }
+  .main table td.plan:before {
+    content: "计划进行";
+    background-color: #4CC85E;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 5px; }
   .main table td.danger {
     color: #E54028;
     background-color: #fef6f5; }
     .main table td.danger:before {
-      font-family: FontAwesome;
-      content: "\f071";
+      content: "风险";
+      background-color: #E54028;
+      color: white;
+      border-radius: 3px;
+      padding: 0 5px;
       margin-right: 5px; }
   .main table td.continue {
     background-color: #f2f7f9;
@@ -5014,6 +5069,39 @@ body {
     color: #87318C;
     background-color: #f3e1f5; }
     .main table td.waiting:before {
-      font-family: FontAwesome;
-      content: "\f017";
+      background-color: #87318C;
+      content: "等待跟进";
+      color: white;
+      border-radius: 3px;
+      padding: 0 5px;
       margin-right: 5px; }
+
+.new-thread, .delayed-thread {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 14px; }
+  .new-thread .title, .delayed-thread .title {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .new-thread .thread, .delayed-thread .thread {
+    margin-bottom: 5px; }
+    .new-thread .thread span.name, .delayed-thread .thread span.name {
+      font-weight: bold; }
+
+.new-thread {
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #ddd; }
+  .new-thread .title:after {
+    content: "新增";
+    background-color: #4CC85E;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+
+.delayed-thread .title:after {
+  content: "滞后";
+  background-color: #A06700;
+  color: white;
+  border-radius: 3px;
+  padding: 0 5px; }
