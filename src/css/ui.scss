@@ -1,4 +1,5 @@
 $fa-font-path: "../../src/lily/fonts" !default;
+$source-code-font-path: "../../src/lily/fonts/source-code" !default;
 
 @import "../lily/css/lily.scss";
 
@@ -43,6 +44,9 @@ body {
   .briefing {
     height:30px;line-height:30px;
     margin-bottom:10px;
+    .date span {
+      font-family: "source-code";
+    }
   }
 }
 
@@ -147,26 +151,24 @@ body {
     }
   }
 
-  td .commits {
-    .commit {
-      font-weight: bold;
-      // background-color: mix(black, darken(#FFFBE3, 10%), 0%);
-      background-color: rgba(black, 0.05);
-      // border-radius: 3px;
-      padding:8px;
-      margin-top:8px;
-      box-shadow:1px 1px 2px rgba(black, 0.2);
-      word-break: break-all;
+  td .commits .commit, td .a-commit{
+    font-weight: bold;
+    // background-color: mix(black, darken(#FFFBE3, 10%), 0%);
+    background-color: rgba(black, 0.05);
+    // border-radius: 3px;
+    padding:8px;
+    margin-top:8px;
+    box-shadow:1px 1px 2px rgba(black, 0.2);
+    word-break: break-all;
 
-      a{color: $area-primary;}
-      .t {
-        color: rgba(black, 0.7);
-      }
-      .t:before {
-        content: "\f0c6";
-        font-family: FontAwesome;
-        margin-right: 5px;
-      }
+    a{color: $area-primary;}
+    .t {
+      color: rgba(black, 0.7);
+    }
+    .t:before {
+      content: "\f0c6";
+      font-family: FontAwesome;
+      margin-right: 5px;
     }
   }
 
@@ -242,7 +244,7 @@ body {
   }
 }
 
-.new-thread, .delayed-thread {
+.new-thread, .delayed-thread, .memo{
   padding: 0 15px;
   margin-bottom: 15px;
   font-size: 14px;
@@ -269,6 +271,8 @@ body {
 }
 
 .delayed-thread {
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #ddd;
   .title:after {
     content:"滞后";
     background-color: $delay-color;

@@ -1,0 +1,370 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2013年3月12日，周四，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      .new-thread
+        .title 本周新增主线：
+        .thread
+          %span.name eshare 区县版：
+          %span 石景山区十所学校 + 教委的 eshare 产品上线工作，截至目前由李飞，宋亮，肖少富参与；
+        .thread
+          %span.name inhouse 人员招募：
+          %span 为今后长期合理应对 inhouse 项目而进行的筹备，截至目前由李飞，宋亮，吴笛参与；
+
+      .delayed-thread
+        .title 本周工作已经/将要滞后的主线：
+        .thread
+          %span.name 斗鱼直播分析工具，
+          %span.name ChatFlow 展示组件，
+          %span.name img4ye
+
+      .memo 备注：本来计划在这次简报中提出提交物规范。由于时间原因推迟到下次简报中。
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+              .s 正在完成三项工作以便于后续迭代：
+              .s 1. 场景范例准备和筛选
+              .s 2. 玩法和用法研究
+              .s 3. UI 改良和移动端适配
+            %td
+              %span 推进微博邀请场景的修改，换用官方组件
+              .a-commit 
+                .t 修改说明
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/15'} https://github.com/mindpin/TouchIdea/issues/15
+            %td.continue
+              %span 三个社交投票产品体验调研
+              .a-commit
+                .t 调研目标
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/16'} https://github.com/mindpin/TouchIdea/issues/16
+              %hr
+              %span 互联网产品激励机制收集
+              .a-commit
+                .t 调研目标
+                %a{:href => 'https://github.com/pimgeek/we-learn/issues/46'} https://github.com/pimgeek/we-learn/issues/46
+            %td
+            %td
+              %span 将微博邀请替换成官方组件
+              .a-commit
+                .t 修改说明（需要陈啸峰回复完成情况）
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/15'} https://github.com/mindpin/TouchIdea/issues/15
+              %hr
+              %span 完成了 new-ui 和 master 分支的第一次合并
+              .a-commit
+                .t 工程分支地址
+                %a{:href => 'https://github.com/mindpin/TouchIdea/tree/new-ui'} https://github.com/mindpin/TouchIdea/tree/new-ui
+            %td.waiting
+              %span 完成了投票游戏场景的三轮迭代，需要跟进
+              .commits
+                .commit
+                  .t 工程地址
+                  %a{:href => 'https://github.com/arlyxiao/touch-vote-demo'} https://github.com/arlyxiao/touch-vote-demo
+            %td
+              %span.plan 推进投票游戏场景与 pinidea 的内化
+              %hr
+              %span.continue 修改 UI，目前已完成第一次合并。第二次合并要解决一些组件实现的问题。
+              .a-commit
+                .t 工程分支地址
+                %a{:href => 'https://github.com/mindpin/TouchIdea/tree/new-ui'} https://github.com/mindpin/TouchIdea/tree/new-ui
+          %tr
+            %td.thread 运营
+            %td.summary.plan 
+              .s 在一些提交物就绪后安排运营计划。包括：
+              .s 1. 内容运营计划
+              .s 2. 活动运营计划
+              .s 3. 推广策略
+            %td.continue 
+              %span 列举和筛选九个范例场景概要，目前工作还在进行中
+              .a-commit
+                .t 九个候选场景
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/13'} https://github.com/mindpin/TouchIdea/issues/13
+            %td
+            %td
+            %td
+            %td
+            %td.plan 参与安排运营计划
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary
+            %td.plan
+              %span 提出 if-then 查找表策略，便于尽早收集团队内部一部分人知道而另一部分人不知道的知识。将提交记录模板格式。
+            %td
+              %span 完成了对三款团队协作工具的调研，并补充了一些额外的信息。
+              .a-commit
+                .t 调研目标和调研报告
+                %a{:href => 'http://s.4ye.me/Ps0XF1'} http://s.4ye.me/Ps0XF1
+              %hr
+              %span.plan 进行调研报告验收讨论会议
+            %td.continue
+              %span 开发和部署任务状态记录工具。
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/mindpin/task-page'} https://github.com/mindpin/task-page
+              .a-commit
+                .t 工具部署地址（目前还未完成）
+                %a{:href => 'http://task.4ye.me/'} http://task.4ye.me/
+            %td
+            %td
+            %td.continue
+              %span 持续改进每日状态跟踪和任务简报
+              .a-commit
+                .t 简报目录地址
+                %a{:href => 'http://www.mindpin.com/briefing/'} http://www.mindpin.com/briefing/
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary.danger
+              %span 依然滞后，具体情况
+              %a{:href => './20150305.html'} 参考上次简报
+            %td
+            %td
+            %td.waiting
+              %span 完成了全文搜索的编写以及部署，需要跟进。
+            %td
+            %td
+            %td.danger 计划编写统计工具前端，但由于时间因素基本没有推进。
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary.danger
+              %span 依然滞后，具体情况
+              %a{:href => './20150305.html'} 参考上次简报
+            %td
+            %td
+            %td
+            %td
+            %td.waiting
+              %span 完成了 ImChatParser 库的第二轮迭代
+              .a-commit
+                .t issue
+                %a{:href => 'https://github.com/mindpin/chatflow/issues/15'} https://github.com/mindpin/chatflow/issues/15
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/arlyxiao/im-chat-parser'} https://github.com/arlyxiao/im-chat-parser
+              %hr
+              %span 完成了 QQ 对话持久化工具 demo 的开发
+              .a-commit
+                .t issue
+                %a{:href => 'https://github.com/mindpin/chatflow/issues/16'} https://github.com/mindpin/chatflow/issues/16
+              .a-commit
+                .t 工程地址（需要部署在 heroku）
+                %a{:href => 'https://gitcafe.com/arlyxiao/im-chat-parser-demo '} https://gitcafe.com/arlyxiao/im-chat-parser-demo 
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary.danger
+              %span 依然滞后，具体情况
+              %a{:href => './20150305.html'} 参考上次简报
+            %td.plan
+              %span 整理汉化组工作流程并提交图文报告。由于时间原因目前不能推进。已转入待办计划。
+            %td
+            %td
+            %td.waiting
+              %span 完成了 dribbble buckets 的收藏夹 demo。已经部署。需要进一步跟进研究组件化提取方式方法。
+              .a-commit
+                .t 工程地址
+                %a{:href => "https://github.com/destinyd/buckets_demo"} https://github.com/destinyd/buckets_demo
+              .a-commit
+                .t 部署地址
+                %a{:href => 'https://buckets-demo-fushang318.herokuapp.com'} https://buckets-demo-fushang318.herokuapp.com
+
+            %td
+            %td
+              %span.danger 计划修改页面内容以通过新浪微博应用审核。实际没有推进。
+              %hr
+              %span.plan 组织验收收藏夹组件并讨论组件化提取方案
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary.new
+              .a-commit
+                .t 区县版推进计划概要
+                %a{:href => 'http://s.4ye.me/l4Abqy'} http://s.4ye.me/l4Abqy
+              %br
+              %span 目前正在梳理功能清单和划分开发任务阶段。需要加快一些进度。
+            %td
+            %td
+            %td
+              %span.continue 区县版功能清单梳理工作
+              .a-commit
+                .t 功能清单梳理记录
+                %a{:href => 'https://github.com/mindpin/beikong-eshare/issues/74'} https://github.com/mindpin/beikong-eshare/issues/74
+              %hr
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+            %td
+            %td
+              %span.continue 区县版功能清单梳理工作。完成了对八中版和基准版功能对比表的整理。
+              .a-commit
+                .t 功能清单梳理记录
+                %a{:href => 'https://github.com/mindpin/beikong-eshare/issues/74'} https://github.com/mindpin/beikong-eshare/issues/74
+              %hr
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+            %td
+              %span.plan
+                制订开发计划和部署方案计划，并参与开发工作
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary.new
+              .a-commit
+                .t 招人工作推进计划概要
+                %a{:href => 'http://s.4ye.me/FffT3l'} http://s.4ye.me/FffT3l
+              %br
+              %span 目前已确认招募要求，正在撰写发布公告的阶段
+            %td
+              %span 完成了招募要求的确认
+              .a-commit
+                .t 招募要求
+                %a{:href => 'https://github.com/mindpin/beikong-eshare/issues/72'} https://github.com/mindpin/beikong-eshare/issues/72
+              %hr
+              %span.plan 
+                %span
+                  %span 撰写并发布招募公告，并跟进反馈
+            %td
+            %td.plan 计划安排对应聘人员的测试。需要给出测试方法和测试步骤。
+            %td
+            %td
+            %td.plan 计划安排对应聘人员的测试。需要给出测试方法和测试步骤。
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary
+            %td
+              %span 给出了一个实习生提问集中记录格式模板
+              .a-commit
+                .t 模板文档
+                %a{:href => 'http://markdown.4ye.me/YuhHZF8u/5'} http://markdown.4ye.me/YuhHZF8u/5
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 其他杂项记录
+            %td.summary
+            %td
+            %td
+            %td.continue
+              %span 正在规划 linode 服务器进程监控的API和实现监控页面
+              %hr
+              %span 计划花时间熟悉目前正在使用的前端 css 实践。目前用于 task-page 的开发。
+            %td.continue
+              %span 正在进行 rails 工程模板标准化工作
+              .a-commit
+                .t issue 地址
+                %a{:href => 'http://s.4ye.me/RONrp1'} http://s.4ye.me/RONrp1
+            %td
+            %td
+          %tr
+            %td.summary.bold{:rowspan => 2} 小结
+            %td.summary.bold 状态总结
+            %td.summary
+              .s 在补完迭代条件和提交物的基础上，保持持续迭代。
+              .s 一些主线的推进完全停滞了。这个需要在将来靠扩充团队规模来改善。
+            %td.summary
+              .s 最近三天主要进行了场景范例准备工作。
+            %td.summary
+              .s 目前主要进行调研工作
+            %td.summary
+              .s 工作均良性推进。主要围绕 task-page 进行。
+            %td.summary
+              .s 工作均良性推进。正在促进一些开发方法标准化的实践。
+            %td.summary
+              .s 工作均良性推进，已经 GTD 需要跟进的工作有所增加。
+            %td.summary
+              .s 由于管理工作增多，一些具体工作的推进迟缓。下周 eshare 方面工作需要再加快一些推进。
+          %tr
+            %td.summary.bold 工作建议
+            %td.summary
+              .s 1. 目前主要的问题在于一些主线的推进停滞。需要靠扩充团队来改善。
+              .s 2. 必须明确地确定扩充团队时需要的职责。必须是能长期持续进行的职责。否则不宜盲目招人。目前已经确定 inhouse 主要工程师的职责。其他方面的职责还需要进一步梳理。
+              .s 3. 尽快推进各方面的标准化工作以减少熵值和重复劳动。
+            %td.summary
+              .s 迭代粒度还可以更细一些。例如，把【准备场景范例，筛选，细化】的工作，拆分成【准备场景范例概要】【针对概要征求意见】【初步筛选】【针对初步筛选扩大范围地征求意见】【二次筛选】【确认并开始细化】来进行。这样的好处是，中途 GTD 次数较多，能够反复修正的机会也较多。
+            %td.summary
+              .s 1. 注意作息规律
+              .s 2. 可以尝试进行更多的围绕需求和体验（包括内容体验）方面的工作
+              .s 3. 可以尝试逐步改进团队 mockup 的设计和展示方法
+            %td.summary
+              .s 下周的注意力需要较多地往 eshare 倾斜
+            %td.summary
+              .s 需要时刻保持主线任务和填空任务同步进行，如果任务提交状态发生变化，以及需要进一步跟进时，需要李飞和宋亮进一步的注意。
+            %td.summary
+              .s 需要时刻保持主线任务和填空任务同步进行，如果任务提交状态发生变化，以及需要进一步跟进时，需要李飞和宋亮进一步的注意。
+            %td.summary
+              .s 1. 注意作息规律。
+              .s 2. 需要把一些任务主线的持续推进转交出去，避免挂起。
+              .s 3. 尽快把各方面迭代调整到良性状态，以便应对即将到来的压力。
+              .s 4. 注意时间管理。
+              .s 5. 改进任务记录整理方法。
+              .s 6. 下周的注意力需要较多地往 eshare 倾斜
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}

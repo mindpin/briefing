@@ -1,2 +1,2 @@
 jQuery ->
-  jQuery('a').attr('target', '_blank')
+  jQuery('.main a').attr('target', '_blank')

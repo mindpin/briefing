@@ -4611,8 +4611,8 @@ a.btn, button.btn, input[type=submit].btn {
   font-style: normal; }
 @font-face {
   font-family: "source-code";
-  src: url("fonts/source-code/SourceCodePro-Light.eot");
-  src: local("☺"), url("fonts/source-code/SourceCodePro-Light.otf.woff") format("woff"), url("fonts/source-code/SourceCodePro-Light.ttf") format("truetype"), url("fonts/source-code/SourceCodePro-Light.svg") format("svg");
+  src: url("../../src/lily/fonts/source-code/SourceCodePro-Light.eot");
+  src: local("☺"), url("../../src/lily/fonts/source-code/SourceCodePro-Light.otf.woff") format("woff"), url("../../src/lily/fonts/source-code/SourceCodePro-Light.ttf") format("truetype"), url("../../src/lily/fonts/source-code/SourceCodePro-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -4926,6 +4926,8 @@ body {
   height: 30px;
   line-height: 30px;
   margin-bottom: 10px; }
+  .briefings .briefing .date span {
+    font-family: "source-code"; }
 
 .main .legends {
   background-color: #555;
@@ -5017,18 +5019,18 @@ body {
     border-radius: 3px;
     padding: 0 5px;
     margin-right: 5px; }
-  .main table td .commits .commit {
+  .main table td .commits .commit, .main table td .a-commit {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 8px;
     margin-top: 8px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     word-break: break-all; }
-    .main table td .commits .commit a {
+    .main table td .commits .commit a, .main table td .a-commit a {
       color: #2A70E8; }
-    .main table td .commits .commit .t {
+    .main table td .commits .commit .t, .main table td .a-commit .t {
       color: rgba(0, 0, 0, 0.7); }
-    .main table td .commits .commit .t:before {
+    .main table td .commits .commit .t:before, .main table td .a-commit .t:before {
       content: "\f0c6";
       font-family: FontAwesome;
       margin-right: 5px; }
@@ -5083,16 +5085,16 @@ body {
       padding: 0 5px;
       margin-right: 5px; }
 
-.new-thread, .delayed-thread {
+.new-thread, .delayed-thread, .memo {
   padding: 0 15px;
   margin-bottom: 15px;
   font-size: 14px; }
-  .new-thread .title, .delayed-thread .title {
+  .new-thread .title, .delayed-thread .title, .memo .title {
     font-weight: bold;
     margin-bottom: 10px; }
-  .new-thread .thread, .delayed-thread .thread {
+  .new-thread .thread, .delayed-thread .thread, .memo .thread {
     margin-bottom: 5px; }
-    .new-thread .thread span.name, .delayed-thread .thread span.name {
+    .new-thread .thread span.name, .delayed-thread .thread span.name, .memo .thread span.name {
       font-weight: bold; }
 
 .new-thread {
@@ -5106,9 +5108,12 @@ body {
     padding: 0 5px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
 
-.delayed-thread .title:after {
-  content: "滞后";
-  background-color: #A06700;
-  color: white;
-  border-radius: 3px;
-  padding: 0 5px; }
+.delayed-thread {
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #ddd; }
+  .delayed-thread .title:after {
+    content: "滞后";
+    background-color: #A06700;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px; }

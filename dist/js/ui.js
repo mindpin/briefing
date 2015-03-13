@@ -1,6 +1,6 @@
 (function() {
   jQuery(function() {
-    return jQuery('a').attr('target', '_blank');
+    return jQuery('.main a').attr('target', '_blank');
   });
 
 }).call(this);
