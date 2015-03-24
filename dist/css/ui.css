@@ -1417,6 +1417,12 @@ output {
 textarea.form-control {
   height: auto; }
 
+input[type="file"].form-control {
+  border: 0 none;
+  box-shadow: none;
+  padding: 0;
+  height: auto; }
+
 input[type="search"] {
   -webkit-appearance: none; }
 
@@ -1531,6 +1537,7 @@ select[multiple].input-lg {
 .has-success .checkbox-inline {
   color: #3c763d; }
 .has-success .form-control {
+  background-color: #dff0d8;
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1559,6 +1566,7 @@ select[multiple].input-lg {
 .has-warning .checkbox-inline {
   color: #8a6d3b; }
 .has-warning .form-control {
+  background-color: #fcf8e3;
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1585,27 +1593,28 @@ select[multiple].input-lg {
 .has-error .checkbox,
 .has-error .radio-inline,
 .has-error .checkbox-inline {
-  color: #a94442; }
+  color: #E54028; }
 .has-error .form-control {
-  border-color: #a94442;
+  background-color: #fff;
+  border-color: #E54028;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-error .form-control:focus {
-    border-color: #843534;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+    border-color: #c22d18;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f09183;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f09183;
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f09183;
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f09183;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f09183; }
 .has-error .input-group-addon {
-  color: #a94442;
-  border-color: #a94442;
-  background-color: #f2dede; }
+  color: #E54028;
+  border-color: #E54028;
+  background-color: #fff; }
 .has-error .form-control-feedback {
-  color: #a94442; }
+  color: #E54028; }
 
 .form-control-static {
   margin-bottom: 0; }
@@ -1691,9 +1700,10 @@ a.btn, button.btn, input[type=submit].btn {
   -ms-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  height: 31.9998px;
-  line-height: 31.9998px;
-  padding: 0 24.99984px; }
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 25px; }
   a.btn:hover, button.btn:hover, input[type=submit].btn:hover {
     text-decoration: none; }
   a.btn:focus, button.btn:focus, input[type=submit].btn:focus {
@@ -1707,22 +1717,22 @@ a.btn, button.btn, input[type=submit].btn {
   a.btn.btn-jumbo, button.btn.btn-jumbo, input[type=submit].btn.btn-jumbo {
     height: 51px;
     line-height: 51px;
-    padding: 0 39.84375px;
+    padding: 0 40px;
     font-size: 22.31264px; }
   a.btn.btn-large, button.btn.btn-large, input[type=submit].btn.btn-large {
     height: 38px;
     line-height: 38px;
-    padding: 0 29.6875px;
+    padding: 0 30px;
     font-size: 16.6251px; }
   a.btn.btn-small, button.btn.btn-small, input[type=submit].btn.btn-small {
     height: 26px;
     line-height: 26px;
-    padding: 0 20.3125px;
+    padding: 0 20px;
     font-size: 11.37507px; }
   a.btn.btn-mini, button.btn.btn-mini, input[type=submit].btn.btn-mini {
     height: 22px;
     line-height: 22px;
-    padding: 0 17.1875px;
+    padding: 0 17px;
     font-size: 9.62506px; }
   a.btn.btn-flat, button.btn.btn-flat, input[type=submit].btn.btn-flat {
     background-color: #e6e6e6;
@@ -2941,6 +2951,66 @@ a.btn, button.btn, input[type=submit].btn {
         line-height: 28.875px; }
       a.btn.disabled.btn-block.btn-mini, a.btn[disabled].btn-block.btn-mini, button.btn.disabled.btn-block.btn-mini, button.btn[disabled].btn-block.btn-mini, input[type=submit].btn.disabled.btn-block.btn-mini, input[type=submit].btn[disabled].btn-block.btn-mini {
         line-height: 24.125px; }
+
+.flash-message {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  background-color: #d5eefd;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 15px 0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative; }
+  .flash-message a.close {
+    display: block;
+    float: right;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: -5px;
+    padding: 0 10px;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s; }
+    .flash-message a.close:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.9); }
+
+.flash-message.success {
+  padding-left: 50px; }
+  .flash-message.success:before {
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4); }
+
+.flash-message.danger {
+  background-color: #f8cdc7;
+  padding-left: 50px; }
+  .flash-message.danger:before {
+    content: "\f071";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4); }
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
