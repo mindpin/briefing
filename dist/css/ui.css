@@ -5050,6 +5050,8 @@ body {
       line-height: 24px; }
   .main table th.member {
     width: 300px; }
+  .main table tr.delayed {
+    background-color: #FEF6F5; }
   .main table td hr {
     height: 5px;
     border-radius: 5px;
@@ -5089,6 +5091,18 @@ body {
     border-radius: 3px;
     padding: 0 5px;
     margin-right: 5px; }
+  .main table td span.waiting {
+    display: block;
+    padding: 5px;
+    color: #87318C;
+    background-color: #f3e1f5; }
+    .main table td span.waiting:before {
+      content: "等待跟进";
+      background-color: #87318C;
+      color: white;
+      border-radius: 3px;
+      padding: 0 5px;
+      margin-right: 5px; }
   .main table td .commits .commit, .main table td .a-commit {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.05);
@@ -5154,6 +5168,8 @@ body {
       border-radius: 3px;
       padding: 0 5px;
       margin-right: 5px; }
+  .main table td.none {
+    background-color: #F7F7F7; }
 
 .new-thread, .delayed-thread, .memo {
   padding: 0 15px;

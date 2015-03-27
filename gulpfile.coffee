@@ -46,6 +46,12 @@ gulp.task 'css', ->
 gulp.task 'html', ->
   gulp.src app.src.html
     .pipe haml()
+    .on 'error', (err)->
+      util.log [
+        err.plugin,
+        util.colors.red err.message
+        err.message
+      ].join ' '
     .pipe gulp.dest(app.dist.html)
 
 gulp.task 'build', [

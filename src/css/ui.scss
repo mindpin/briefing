@@ -99,6 +99,10 @@ body {
     width: 300px;
   }
 
+  tr.delayed {
+    background-color: #FEF6F5;
+  }
+
   td {
     hr {
       height:5px;
@@ -147,6 +151,20 @@ body {
         border-radius:3px;
         padding:0 5px;
         margin-right: 5px;
+      }
+    }
+    span.waiting {
+      display: block;
+      padding: 5px;
+      color: $area-dream;
+      background-color: lighten($area-dream, 55%);
+      &:before {
+        content: "等待跟进";
+        background-color: $area-dream;
+        color: white;
+        border-radius:3px;
+        padding:0 5px; 
+        margin-right:5px;
       }
     }
   }
@@ -241,6 +259,9 @@ body {
       padding:0 5px; 
       margin-right:5px;
     }
+  }
+  td.none {
+    background-color: #F7F7F7;
   }
 }
 
