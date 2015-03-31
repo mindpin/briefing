@@ -1,0 +1,213 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2015年3月26日，周四，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      .delayed-thread
+        .title 本阶段工作已经/将要滞后的主线：
+        .thread
+          %span.name 斗鱼直播分析工具，
+          %span.name ChatFlow 展示组件，
+          %span.name img4ye
+
+      .memo 
+        .title <b>简报建议阅读方法：</b>
+        .s 1. 如果比较关注自己的或者某个特定成员的所有工作状态和提交物，可以纵向地看。每个人的名字和头像下面会列出各条主线的工作以及总结；
+        .s 2. 如果比较关注每条主线的变化，可以横向地看。每条产品主线右侧会列出主线的总结以及每个人的工作状态和提交物；
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+
+          %tr
+            %td.thread 运营
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary
+            %td
+            %td
+            %td
+            %td 
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 开发标准化推进
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 杂项
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.summary.bold{:rowspan => 2} 小结
+            %td.summary.bold 状态总结
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+          %tr
+            %td.summary.bold 工作建议
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}

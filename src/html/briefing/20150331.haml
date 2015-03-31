@@ -1,0 +1,340 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2015年3月31日，周一，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      .delayed-thread
+        .title 本阶段工作已经/将要滞后的主线：
+        .thread
+          %span.name 斗鱼直播分析工具，
+          %span.name ChatFlow 展示组件，
+          %span.name img4ye
+
+      .memo 
+        .title <b>简报建议阅读方法：</b>
+        .s 1. 如果比较关注自己的或者某个特定成员的所有工作状态和提交物，可以纵向地看。每个人的名字和头像下面会列出各条主线的工作以及总结；
+        .s 2. 如果比较关注每条主线的变化，可以横向地看。每条产品主线右侧会列出主线的总结以及每个人的工作状态和提交物；
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary 
+              .s 本周团队的主要开发资源已分配到该主线，目标是尽快完成 pinidea 0.2 版的迭代。
+              .a-commit
+                .t 需求工作过程记录
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/18'} mindpin/TouchIdea#18
+            %td
+            %td
+            %td.waiting
+              .s 技术调研
+              .a-commit
+                .t Notification API
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/23'} mindpin/TouchIdea#23
+              .a-commit
+                .t 原生 APP + HTML 混合开发
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/24'} mindpin/TouchIdea#24
+            %td
+              .s pinidea 0.2 开发任务
+              .a-commit
+                .t 模型修改
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/21'} mindpin/TouchIdea#21
+            %td.continue
+              .s infocard 数据解析器开发
+              .a-commit
+                .t 任务要求
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/22'} mindpin/TouchIdea#22
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/mindpin/infocard-service'} mindpin/infocard-service
+              %br
+              .s 需要实现一个测试页，便于夏实测试数据正确性
+            %td.continue
+              .s 继续进行 pinidea 0.2 UI 编写，已完成的 UI 会逐步提交到在线预览
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/mindpin/ui-design'} mindpin/ui-design
+              .a-commit
+                .t 在线预览地址
+                %a{:href => 'http://www.mindpin.com/ui-design/'} mindpin.com/ui-design/
+
+
+          %tr
+            %td.thread 运营
+            %td.summary 准备运营预置数据。UI 部分完成后会着手制定运营方案。
+            %td
+              .s 进行用于填充预置议题的产品信息收集
+              .a-commit
+                .t 收集任务要求和提交地址
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/20'} mindpin/TouchIdea#20
+            %td
+              .s 进行用于编写 infocard 解析器的商品信息网站案例收集
+              .a-commit
+                .t 任务要求和提交地址
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/19'} mindpin/TouchIdea#19
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary 继续开发任务记录工具。由于是填空任务，所以优先级不高。
+            %td
+            %td
+            %td.continue
+              %span （填空任务有空就做没空不做）开发和部署任务状态记录工具。
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/mindpin/task-page'} https://github.com/mindpin/task-page
+              .a-commit
+                .t 工具部署地址（目前还未完成）
+                %a{:href => 'http://task.4ye.me/'} http://task.4ye.me/
+            %td
+            %td
+            %td.continue
+              .s 持续记录工作状态，以及撰写半周报
+              .a-commit
+                .t 工作状态原始记录
+                %a{:href => 'https://github.com/mindpin/briefing/issues'} mindpin/briefing/issues
+              .a-commit
+                .t 半周报目录
+                %a{:href => 'http://www.mindpin.com/briefing/'} http://www.mindpin.com/briefing/
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td
+            %td
+            %td
+            %td
+            %td.waiting
+              .s （补记）几周前已完成了直播数据统计后端，等待前端实现
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/ben7th/yuwan_counter_service'} ben7th/yuwan_counter_service
+            %td.continue
+              .s 每天持续进行斗鱼直播数据采集
+              .a-commit
+                .t 原始数据采集查看地址
+                %a{:href => 'http://yuwan.4ye.me/rubymyadmin/'} http://yuwan.4ye.me/rubymyadmin/
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td
+            %td
+            %td
+            %td
+            %td.waiting
+              %span 完成了 ImChatParser 库的第二轮迭代
+              .a-commit
+                .t issue
+                %a{:href => 'https://github.com/mindpin/chatflow/issues/15'} https://github.com/mindpin/chatflow/issues/15
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://github.com/arlyxiao/im-chat-parser'} https://github.com/arlyxiao/im-chat-parser
+              %hr
+              %span 完成了对 QQ 对话持久化工具进行的 BUG 修复
+              .a-commit
+                .t issue
+                %a{:href => 'https://github.com/mindpin/chatflow/issues/16'} https://github.com/mindpin/chatflow/issues/16
+              .a-commit
+                .t 工程地址
+                %a{:href => 'https://gitcafe.com/arlyxiao/im-chat-parser-demo '} https://gitcafe.com/arlyxiao/im-chat-parser-demo 
+              .a-commit
+                .t demo 地址
+                %a{:href => 'https://serene-thicket-8391.herokuapp.com/'} https://serene-thicket-8391.herokuapp.com/
+            %td
+          %tr.delayed
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary.danger
+              %span 依然滞后，主要原因是执行时间不足。
+            %td.waiting
+              .s 完成了汉化组调研工作的第一阶段。需要跟进确定和讨论一些问题。
+              .a-commit
+                .t 任务要求和提交物地址
+                %a{:href => 'https://github.com/mindpin/image-service/issues/15'} mindpin/image-service#15
+            %td
+            %td
+            %td.waiting
+              %span 完成了 dribbble buckets 的收藏夹 demo。已经部署。需要进一步跟进研究组件化提取方式方法。
+              .a-commit
+                .t 工程地址
+                %a{:href => "https://github.com/destinyd/buckets_demo"} https://github.com/destinyd/buckets_demo
+              .a-commit
+                .t 部署地址
+                %a{:href => 'https://buckets-demo-fushang318.herokuapp.com'} https://buckets-demo-fushang318.herokuapp.com
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary 
+              .s 等待北控反馈。少量时间继续进行 BUGFIX 和操作手册撰写。
+              .a-commit
+                .t 区县版推进计划概要
+                %a{:href => 'http://s.4ye.me/l4Abqy'} http://s.4ye.me/l4Abqy
+              %hr
+              .a-commit
+                .t 提交物汇总
+                %a{:href => 'https://github.com/mindpin/beikong-eshare/issues/79'} https://github.com/mindpin/beikong-eshare/issues/79
+              %br
+              .s 提交物包括：
+              .s 1. 虚拟机和相关软件
+              .s 2. 部署手册
+              .s 操作手册和实施计划仍在撰写中
+            %td
+            %td
+            %td
+            %td 
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary 暂无反馈，继续跟进
+            %td.continue
+              .a-commit
+                .t 周伯通上的招聘页
+                %a{:href => 'http://s.4ye.me/tF8mCi'} http://s.4ye.me/tF8mCi
+              .a-commit
+                .t 周伯通上的企业信息
+                %a{:href => 'http://s.4ye.me/nRUdBQ'} http://s.4ye.me/nRUdBQ
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary 实习生回学校了。暂无安排。
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 开发标准化推进
+            %td.summary 目前已整理出 UI 标准化组件清单和使用范例，将在 pinidea 等主线开发的过程中作为填空任务分批实现。
+            %td
+            %td
+            %td.waiting
+              %span 配合标准工程初始化模板进行部署工具 mina 的初始化脚本（rails generator）编写
+              .a-commit
+                .t 改动说明
+                %a{:href => 'http://markdown.4ye.me/lbNqY8D3/2'} markdown.4ye.me#lbNqY8D3/2
+              %hr
+              %span UI 标准组件清单整理
+              .a-commit
+                .t 组件开发整理清单
+                %a{:href => 'https://github.com/mindpin/lily/issues/2'} mindpin/lily#2
+            %td.waiting
+              .a-commit
+                .t 标准工程初始化模板
+                %a{:href => 'https://github.com/destinyd/rails-composer-1'} destinyd/rails-composer-1
+              %hr
+              %span UI 标准组件清单整理
+              .a-commit
+                .t 组件开发整理清单
+                %a{:href => 'https://github.com/mindpin/lily/issues/2'} mindpin/lily#2
+            %td
+            %td
+          %tr
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 杂项
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr
+            %td.summary.bold{:rowspan => 2} 小结
+            %td.summary.bold 状态总结
+            %td.summary 由于 eshare 在等待反馈，并且开发标准化推进属于长期任务，因此目前的开发资源已经都向 pinidea 0.2 倾斜。目标是尽快完成这轮迭代，让大家看到成品。
+            %td.summary 跟进招聘工作，进行信息收集工作。
+            %td.summary 信息收集工作
+            %td.summary pinidea 相关的调研和开发过程改进
+            %td.summary pinidea 0.2 相关开发
+            %td.summary pinidea 0.2 相关开发
+            %td.summary pinidea 0.2 相关开发
+          %tr
+            %td.summary.bold 工作建议
+            %td.summary 尽快完成一轮完整的迭代，这很重要。（希望不要被各种干扰）
+            %td.summary 注意任务的分解以及状态的反馈。
+            %td.summary 注意作息
+            %td.summary 后续可以和宋亮梳理一下各方面工作流程（需求/研发）。以改进任务分配/实习安排
+            %td.summary GOOD
+            %td.summary GOOD
+            %td.summary 注意作息。注意控制情绪。
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}
