@@ -45,7 +45,10 @@ body {
     height:30px;line-height:30px;
     margin-bottom:10px;
     .date span {
-      font-family: "source-code";
+      font-family: "source-code", "微软雅黑";
+    }
+    a {
+      margin-left: 5px;
     }
   }
 }
@@ -101,6 +104,9 @@ body {
 
   tr.delayed {
     background-color: #FEF6F5;
+    td {
+      background-color: #FEF6F5 !important;
+    }
   }
 
   td {
@@ -262,6 +268,67 @@ body {
   }
   td.none {
     background-color: #F7F7F7;
+  }
+
+  // 2015.4.7 新增的样式
+  td .work {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 8px;
+    border-top: dashed 1px #aaa;
+    &:first-child {
+      margin-top: -8px;
+      border-top:0 none;
+    }
+    &:last-child {
+      margin-bottom: -8px;
+    }
+    .suggestion {
+      margin-top: 8px;
+    }
+    .desc {
+      margin-bottom: 8px;
+    }
+
+    &.waiting {
+      color: $area-dream;
+      background-color: lighten($area-dream, 55%);
+      &:before {
+        background-color: $area-dream;
+        content: "等待跟进";
+        color: white;
+        border-radius:3px;
+        padding:0 5px; 
+        margin-right:5px;
+        float: left;
+      }
+    }
+    &.continue {
+      color: #3f7faf;
+      background-color: #f2f7f9;
+      &:before {
+        background-color: #3f7faf;
+        content: "进行中";
+        color: white;
+        border-radius:3px;
+        padding:0 5px; 
+        margin-right:5px;
+        float: left;
+      }
+    }
+    &.danger {
+      color: $area-danger;
+      background-color: lighten($area-danger, 45%);
+      &:before {
+        content: "风险";
+        background-color: $area-danger;
+        color:white;
+        border-radius:3px;
+        padding:0 5px; 
+        margin-right:5px;
+        float: left;
+      }
+    }
   }
 }
 

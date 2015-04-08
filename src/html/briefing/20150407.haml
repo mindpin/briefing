@@ -1,0 +1,212 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body{:data => {:yaml => '20150407.yaml'}}
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2015 年 4 月 7 日，周二，工作简报（两次汇总）
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+
+      .delayed-thread
+        .title 本阶段工作已经/将要滞后的主线：
+        .thread
+          %span.name 斗鱼直播分析工具，
+          %span.name ChatFlow 展示组件，
+
+      .memo 
+        .title <b>简报建议阅读方法：</b>
+        .s 1. 如果比较关注自己的或者某个特定成员的所有工作状态和提交物，可以纵向地看。每个人的名字和头像下面会列出各条主线的工作以及总结；
+        .s 2. 如果比较关注每条主线的变化，可以横向地看。每条产品主线右侧会列出主线的总结以及每个人的工作状态和提交物；
+      .memo
+        这次的简报包括 2015.04.01 - 2015.04.07 的工作内容
+
+      %table.table.table-bordered
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member{:data => {:id => :wudi}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member{:data => {:id => :chilliza}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member{:data => {:id => :lifei}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member{:data => {:id => :dd}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member{:data => {:id => :xiao}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member{:data => {:id => :ben7th}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr{:data => {:id => :pinidea_yanfa}}
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+
+          %tr{:data => {:id => :pinidea_yunying}}
+            %td.thread 运营
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :task_service}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :douyu}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :chatflow}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :img4ye}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :eshare}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary
+            %td
+            %td
+            %td
+            %td 
+            %td
+            %td
+          %tr{:data => {:id => :hr}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :trainee}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 实习生培训
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :develop}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 开发标准化推进
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :misc}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 杂项
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :summary}}
+            %td.summary.thread{:rowspan => 2} 小结
+            %td.summary.thread 状态总结
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+          %tr{:data => {:id => :suggestion}}
+            %td.summary.thread 工作建议
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../lib/js-yaml.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}

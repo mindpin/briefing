@@ -1,0 +1,325 @@
+pinidea_yanfa:
+  summary:
+    - status: common
+      desc: 团队的主要开发资源仍在执行 pinidea 0.2 的开发工作
+      commits:
+        - t: 需求工作过程记录
+          url: https://github.com/mindpin/TouchIdea/issues/18
+        - t: UI 集成跟踪记录
+          url: https://github.com/mindpin/TouchIdea/issues/27
+  lifei:
+    - status: waiting
+      desc: 关于移动应用开发的技术调研
+      commits:
+        - t: Notification API
+          url: https://github.com/mindpin/TouchIdea/issues/23
+        - t: 原生 APP + HTML 混合开发
+          url: https://github.com/mindpin/TouchIdea/issues/24
+      suggestions:
+        - 由于移动浏览器支持有限，暂不考虑 Notification API
+        - 如果对通知有较强的要求，在 pinidea 0.2 迭代完成后考虑 app + html 形式的改造
+    - status: continue
+      desc: 网址解析相关开发（配合肖少富）
+  dd:
+    - status: continue
+      desc: pinidea 0.2 开发任务
+      commits: 
+        - t: 投票模型修改
+          url: https://github.com/mindpin/TouchIdea/issues/21
+        - t: 通知实现
+          url: https://github.com/mindpin/TouchIdea/issues/29
+        - t: 随机投票推荐
+          url: https://github.com/mindpin/TouchIdea/issues/28
+        - t: UI 集成跟踪记录
+          url: https://github.com/mindpin/TouchIdea/issues/27
+
+  xiao:
+    - status: continue
+      desc: infocard 商品网址数据解析器开发
+      commits:
+        - t: 任务要求
+          url: https://github.com/mindpin/TouchIdea/issues/22
+        - t: 工程地址
+          url: https://github.com/mindpin/infocard-service
+        - t: 测试页
+          url: https://banana-cake-6494.herokuapp.com/
+
+  ben7th:
+    - status: continue
+      desc: 继续进行 pinidea 0.2 UI 编写，已完成的 UI 会逐步提交到在线预览
+      commits:
+        - t: 工程地址
+          url: https://github.com/mindpin/ui-design
+        - t: 在线预览地址
+          url: http://www.mindpin.com/ui-design/
+      suggestions:
+        - 请使用手机观看在线预览
+
+pinidea_yunying:
+  summary:
+    - status: common
+      desc: 
+        - 准备运营预置数据。UI 部分完成后会着手制定运营方案。
+        - 会针对目前收集的数据样本进行一些解析工具建模开发，以便于运营开展
+        - 运营工作展开是在运营方案制定之后，而不是现在
+
+  wudi:
+    - status: continue
+      desc: 
+        - 进行用于填充预置议题的产品信息收集
+        - 这 100 个信息会作为运营数据的样本供开发参考
+      commits:
+        - t: 收集任务要求和提交地址
+          url: https://github.com/mindpin/TouchIdea/issues/20
+
+  chilliza:
+    - status: waiting
+      desc:
+        - 已完成一批用于编写 infocard 解析器的商品信息网站案例收集
+        - pinidea 0.2 迭代先只支持这一批
+      commits:
+        - t: 任务要求和提交地址
+          url: https://github.com/mindpin/TouchIdea/issues/19
+    - status: continue
+      desc:
+        - 测试网址解析工具的解析结果正确性
+
+task_service:
+  summary:
+    - status: common
+      desc: 
+        - 继续开发任务记录工具。由于是填空任务，所以优先级不高。
+        - 目前李飞在开发记录工具
+        - 宋亮在持续改进简报形式
+        - 记录工具完成后，会和简报发布有一次集成
+
+  lifei:
+    - status: continue
+      desc: （填空任务有空就做没空不做）开发和部署任务状态记录工具。
+      commits:
+        - t: 工程地址
+          url: https://github.com/mindpin/task-page
+        - t: 工具部署地址（目前还未完成）
+          url: http://task.4ye.me/
+
+  ben7th:
+    - status: continue
+      desc:
+        - 持续记录工作状态，以及撰写简报
+        - 简报一般是半周一发，但是偶尔会不定期（比如这次）
+      commits:
+        - t: 工作状态原始记录
+          url: https://github.com/mindpin/briefing/issues
+        - t: 简报目录
+          url: http://www.mindpin.com/briefing/
+
+douyu:
+  summary:
+    - tr: delayed
+      status: danger
+      desc: 依然滞后，主要原因是执行时间不足。
+
+  xiao:
+    - status: waiting
+      desc: 春节前后已完成了直播数据统计后端，等待前端实现
+      commits:
+        - t: 工程地址
+          url: https://github.com/ben7th/yuwan_counter_service
+      suggestions:
+        - pinidea 0.2 完成后发起讨论
+
+  ben7th:
+    - status: continue
+      desc: 每天持续进行斗鱼直播数据采集
+      commits:
+        - t: 原始数据采集查看地址
+          url: http://yuwan.4ye.me/rubymyadmin/
+      suggestions:
+        - 目前已累积 120 万条数据，可以用于支持一些语料分析工作
+
+chatflow:
+  summary:
+    - tr: delayed
+      status: danger
+      desc: 依然滞后，主要原因是执行时间不足。
+
+  xiao:
+    - status: waiting
+      desc: 完成了 ImChatParser 库的第二轮迭代
+      commits:
+        - t: 任务描述
+          url: https://github.com/mindpin/chatflow/issues/15
+        - t: 工程地址
+          url: https://github.com/arlyxiao/im-chat-parser
+    - status: waiting
+      desc: 完成了对 QQ 对话持久化工具进行的 BUG 修复
+      commits:
+        - t: 任务描述
+          url: https://github.com/mindpin/chatflow/issues/16
+        - t: 工程地址
+          url: https://gitcafe.com/arlyxiao/im-chat-parser-demo
+        - t: demo 地址
+          url: https://serene-thicket-8391.herokuapp.com/
+
+img4ye:
+  summary:
+    - status: common
+      desc: 
+        - 因为进行 pinidea 数据准备时发现的一些体验问题，进行了一些小改动，目前已增加上传进度条体验
+        - 针对如何进一步提升性能进行了调研和开发方案构思
+
+  wudi:
+    - status: waiting
+      desc: 完成了汉化组调研工作的第一阶段。需要跟进确定和讨论一些问题。
+      commits:
+        - t: 任务要求和提交物地址
+          url: https://github.com/mindpin/image-service/issues/15
+      suggestions:
+        - 这部分工作将在下次 img4ye 迭代时跟进
+  chilliza:
+    - status: continue
+      desc: 正在进行 img4ye mockup 设计方案的调整工作
+      commits:
+        - t: 需求整理记录地址
+          url: https://github.com/mindpin/image-service/issues/7
+  lifei:
+    - status: waiting
+      desc: 围绕七牛云存储进行了一些技术调研
+      commits:
+        - t: 调研结果记录
+          url: https://github.com/mindpin/image-service/issues/17
+      suggestions:
+        - 这部分工作将在下次 img4ye 迭代时跟进
+  ben7th:
+    - status: done
+      desc: 对 img4ye 进行了一些体验调整
+      commits:
+        - t: 四月一日的改动和遗留问题记录
+          url: https://github.com/mindpin/image-service/issues/16
+
+eshare:
+  summary:
+    - tr: delayed
+      desc: 本周未在这条主线花任何时间，但之前的材料仍有部分未完成，需要注意
+      commits:
+        - t: 区县版推进计划概要
+          url: http://s.4ye.me/l4Abqy
+        - t: 提交物汇总
+          url: https://github.com/mindpin/beikong-eshare/issues/79
+      suggestions:
+        - 提交物包括：
+        - 1. 虚拟机和相关软件
+        - 2. 部署手册
+        - 操作手册和实施计划未撰写完，需注意
+
+trainee:
+  summary:
+    - desc: 继续学习滑板书。本周未作更多关注。
+
+hr:
+  summary:
+    - desc: 暂无反馈，保持跟进
+
+  wudi:
+    - status: continue
+      desc: 持续中
+      commits:
+        - t: 发放记录
+          url: https://workflowy.com/s/FCZgnTOl8c
+        - t: Ruby 人才调研（主要目的是搜集一些典型简历，和典型招聘帖，来调整对 Ruby 人才薪资的认知）
+          url: https://docs.baihui.com/sheet/published.do?rid=mxpis33d0889afa184655ab890533a0eeb7f9
+        - t: 简历处理记录
+          url: http://markdown.4ye.me/sA7p4vTd
+
+develop:
+  summary:
+    - status: waiting
+      desc: 
+        - 目前已完成了一些围绕前端标准化的前期准备工作
+        - 目前执行时间不足，暂时只能利用周末进行
+        - pinidea 0.2 / img4ye 0.3 完成后情况可能会好转
+        - 适当考虑提升优先级
+
+  lifei:
+    - status: waiting
+      desc:
+        - 配合标准工程初始化模板进行部署工具 mina 的初始化脚本（rails generator）编写
+      commits:
+        - t: 改动说明
+          url: http://markdown.4ye.me/lbNqY8D3/2
+    - status: waiting
+      desc:
+        - UI 标准组件清单整理
+      commits:
+        - t: 组件开发整理清单
+          url: https://github.com/mindpin/lily/issues/2
+
+  dd:
+    - status: waiting
+      desc:
+        - 配合标准工程初始化模板进行部署工具 mina 的初始化脚本（rails generator）编写
+      commits:
+        - t: 标准工程初始化模板
+          url: https://github.com/destinyd/rails-composer-1
+    - status: waiting
+      desc:
+        - UI 标准组件清单整理
+      commits:
+        - t: 组件开发整理清单
+          url: https://github.com/mindpin/lily/issues/2
+
+misc:
+  summary:
+    - status: waiting
+      desc: 有一份老李提交的材料需要纳入调研工作范畴
+      commits:
+        - t: 材料地址
+          url: http://markdown.4ye.me/rmr81BPe/4
+
+summary:
+  summary:
+    - desc:
+      - 目前主要工作都围绕 pinidea 0.2 开展
+      - 开发工作完成后会进行集中的运营相关工作
+      - 所有工作会持续到四月中下旬
+  wudi:
+    - desc: 招聘和数据样本准备工作
+  chilliza:
+    - desc: mockup / 信息收集
+  lifei:
+    - desc: 技术调研和网址解析工具开发
+  dd:
+    - desc: pinidea 0.2 相关开发
+  xiao:
+    - desc: pinidea 0.2 相关开发
+  ben7th:
+    - desc: 
+      - pinidea 0.2 相关开发
+      - img4ye 推进
+
+
+suggestion:
+  summary:
+    - desc:
+      - 尽快完成 pinidea 0.2 迭代
+      - 注意调整各职责的任务时间平衡，以便运营工作开展
+  wudi:
+    - desc: 
+      - 平时有疑虑的问题多问。随时都可以问。
+      - 包括团队后续工作计划，以及每个任务如何跟进，每个提交物如何使用，随时问宋亮
+      - 其他问题随时问老李
+  chilliza:
+    - desc: 注意作息
+  lifei:
+    - desc: 后续可以和宋亮梳理一下各方面工作流程（需求/研发）。以改进任务分配 / 实习安排
+  dd:
+    - desc: GOOD
+  xiao:
+    - desc: GOOD
+  ben7th:
+    - desc:
+      - 注意作息
+      - 可能需要及时注意到一些工作中的疑惑并补充说明
+      - 但如果大家有疑惑的话最好的方式仍然是问
+      - 因为没有一种完美的沟通方式让大家没有任何疑惑
+

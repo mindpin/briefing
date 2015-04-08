@@ -4997,7 +4997,9 @@ body {
   line-height: 30px;
   margin-bottom: 10px; }
   .briefings .briefing .date span {
-    font-family: "source-code"; }
+    font-family: "source-code", "微软雅黑"; }
+  .briefings .briefing a {
+    margin-left: 5px; }
 
 .main .legends {
   background-color: #555;
@@ -5052,6 +5054,8 @@ body {
     width: 300px; }
   .main table tr.delayed {
     background-color: #FEF6F5; }
+    .main table tr.delayed td {
+      background-color: #FEF6F5 !important; }
   .main table td hr {
     height: 5px;
     border-radius: 5px;
@@ -5170,6 +5174,53 @@ body {
       margin-right: 5px; }
   .main table td.none {
     background-color: #F7F7F7; }
+  .main table td .work {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 8px;
+    border-top: dashed 1px #aaa; }
+    .main table td .work:first-child {
+      margin-top: -8px;
+      border-top: 0 none; }
+    .main table td .work:last-child {
+      margin-bottom: -8px; }
+    .main table td .work .suggestion {
+      margin-top: 8px; }
+    .main table td .work .desc {
+      margin-bottom: 8px; }
+    .main table td .work.waiting {
+      color: #87318C;
+      background-color: #f3e1f5; }
+      .main table td .work.waiting:before {
+        background-color: #87318C;
+        content: "等待跟进";
+        color: white;
+        border-radius: 3px;
+        padding: 0 5px;
+        margin-right: 5px;
+        float: left; }
+    .main table td .work.continue {
+      color: #3f7faf;
+      background-color: #f2f7f9; }
+      .main table td .work.continue:before {
+        background-color: #3f7faf;
+        content: "进行中";
+        color: white;
+        border-radius: 3px;
+        padding: 0 5px;
+        margin-right: 5px;
+        float: left; }
+    .main table td .work.danger {
+      color: #E54028;
+      background-color: #fef6f5; }
+      .main table td .work.danger:before {
+        content: "风险";
+        background-color: #E54028;
+        color: white;
+        border-radius: 3px;
+        padding: 0 5px;
+        margin-right: 5px;
+        float: left; }
 
 .new-thread, .delayed-thread, .memo {
   padding: 0 15px;
