@@ -273,6 +273,13 @@ misc:
       commits:
         - t: 材料地址
           url: http://markdown.4ye.me/rmr81BPe/4
+  wudi:
+    - status: common
+      desc: 吴笛建议可以把 pinidea 的手气模式图标改成旋转骰子
+
+  ben7th:
+    - status: common
+      desc: 老李建议可以考虑 pinidea 的匿名观看（不登录浏览）的模式
 
 summary:
   summary:
