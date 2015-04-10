@@ -34,22 +34,44 @@ class YamlLoader
 
       for d in _desc
         $desc = jQuery('<div>')
-          .addClass('desc').html d
+          .addClass('desc').html(d)
           .appendTo $work
+
+      if data.bundle?
+        $bundle = jQuery('<div>').addClass('bundle')
+          .appendTo $work
+          .append '<div class="bundle-title">提交物组合</div>'
+        $task = jQuery('<div>').addClass('bundle-task')
+          .append '<span>任务</span>'
+          .append @make_link data.bundle.task
+          .appendTo $bundle
+        $project = jQuery('<div>').addClass('bundle-project')
+          .append '<span>工程</span>'
+          .append @make_link data.bundle.project
+          .appendTo $bundle
+        $demo = jQuery('<div>').addClass('bundle-demo')
+          .append '<span>演示</span>'
+          .append @make_link data.bundle.demo
+          .appendTo $bundle
 
       if data.commits?
         for commit in data.commits
-          urltext = @deal_url commit.url
           $commit = jQuery('<div>').addClass('a-commit')
             .appendTo $work
             .append(jQuery('<div>').addClass('t').html(commit.t))
-            .append(jQuery('<a>').attr('href', commit.url).attr('target', '_blank').html(urltext))
+            .append @make_link commit.url
 
       if data.suggestions?
         for suggestion in data.suggestions
           $suggestion = jQuery('<div>').addClass('suggestion')
             .html(suggestion)
             .appendTo $work
+
+  make_link: (url)->
+    jQuery('<a>')
+      .attr('href', url)
+      .attr('target', '_blank')
+      .html(@deal_url url)
 
   deal_url: (url)->
     match = url.match /^https:\/\/github.com\/mindpin\/(.+)\/issues\/(\d+)$/

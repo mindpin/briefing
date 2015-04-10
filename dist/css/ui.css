@@ -5221,6 +5221,32 @@ body {
         padding: 0 5px;
         margin-right: 5px;
         float: left; }
+    .main table td .work.done:before {
+      content: "\f058";
+      font-family: FontAwesome;
+      border-radius: 3px;
+      margin-right: 5px;
+      float: left; }
+    .main table td .work .bundle {
+      border: solid 1px #ddd;
+      background-color: #f8ffe8; }
+      .main table td .work .bundle .bundle-title {
+        background-color: #35ac46;
+        color: white;
+        padding: 5px 10px;
+        margin: 3px; }
+      .main table td .work .bundle .bundle-task, .main table td .work .bundle .bundle-project, .main table td .work .bundle .bundle-demo {
+        word-break: break-all;
+        margin: 3px;
+        border-bottom: dashed 1px rgba(0, 0, 0, 0.3); }
+        .main table td .work .bundle .bundle-task:last-child, .main table td .work .bundle .bundle-project:last-child, .main table td .work .bundle .bundle-demo:last-child {
+          border-bottom: 0 none; }
+        .main table td .work .bundle .bundle-task span, .main table td .work .bundle .bundle-project span, .main table td .work .bundle .bundle-demo span {
+          margin-right: 5px;
+          color: rgba(0, 0, 0, 0.8); }
+        .main table td .work .bundle .bundle-task a, .main table td .work .bundle .bundle-project a, .main table td .work .bundle .bundle-demo a {
+          color: #005500;
+          font-weight: bold; }
 
 .new-thread, .delayed-thread, .memo {
   padding: 0 15px;
@@ -5254,3 +5280,20 @@ body {
     color: white;
     border-radius: 3px;
     padding: 0 5px; }
+
+table.trainee {
+  width: auto; }
+
+.reading-tips {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  opacity: 0.8; }
+  .reading-tips .t {
+    text-align: center;
+    height: 30px;
+    line-height: 30px; }
+  .reading-tips img {
+    height: 200px; }

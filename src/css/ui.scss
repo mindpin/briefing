@@ -329,6 +329,37 @@ body {
         float: left;
       }
     }
+    &.done {
+      &:before {
+        content: "\f058";
+        font-family: FontAwesome;
+        border-radius:3px;
+        margin-right:5px;
+        float: left;
+      }
+    }
+
+    .bundle {
+      border:solid 1px #ddd;
+      background-color: lighten(#E8FFB5, 10%);
+      .bundle-title {
+        background-color: darken(#4CC85E, 10%);
+        color:white;
+        padding: 5px 10px;
+        margin: 3px;
+      }
+      .bundle-task, .bundle-project, .bundle-demo {
+        word-break: break-all;
+        margin: 3px;
+        border-bottom: dashed 1px rgba(black, 0.3);
+        &:last-child {border-bottom: 0 none;}
+        span {
+          margin-right: 5px;
+          color: rgba(black, 0.8);
+        }
+        a {color: #005500;font-weight: bold;}
+      }
+    }
   }
 }
 
@@ -367,5 +398,24 @@ body {
     color: white;
     border-radius:3px;
     padding:0 5px; 
+  }
+}
+
+table.trainee {
+  width:auto;
+}
+
+.reading-tips {
+  position: fixed;
+  top: 10px; right: 10px;
+  background-color: #fff;
+  border:solid 1px #ddd;
+  opacity: 0.8;
+  .t {
+    text-align: center;
+    height: 30px; line-height: 30px;
+  }
+  img {
+    height: 200px;
   }
 }
