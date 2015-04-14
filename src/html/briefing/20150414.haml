@@ -6,7 +6,7 @@
     %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
     %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
 
-  %body{:data => {:yaml => '20150410.yaml'}}
+  %body{:data => {:yaml => '20150414.yaml'}}
     .header
       .container-full
         .row
@@ -14,7 +14,7 @@
             %a.back{:href => '../'}
               %i.fa.fa-arrow-left
               %span 返回
-            .t 2015 年 4 月 10 日，周五，工作简报
+            .t 2015 年 4 月 14 日，周二，工作简报
 
     .main
       .legends
@@ -27,6 +27,15 @@
           %span 存在风险：
         .legend.waiting
           %span 等待跟进：
+      .memo{:style => 'color:#2A70E8;'}
+        .title{:style => 'color:#FF4400;'} 本次简报的一些说明：
+        .s 1. 相比于上次简报，有变化的主线是 pinidea. 其他主线基本保持原状。
+        .s 2. 打紫标的（“等待跟进”）记录一般是做完了，但还没有进行后续处理的任务。在后续处理开始之前，不会从简报里拿掉。会一直保持在那个格子里。
+        .s 3. 打浅蓝标的（“进行中”）记录要么写简报时还未完成，要么是长期持续工作，如果是长期持续，那么也不会从简报里拿掉。会一直保持在那个格子里。
+        .s pinidea 之外的其他主线目前都是紫标和浅蓝标，所以没有变化
+        .s 以后的简报中，如果是这种暂无变化，但有些记录又要保持的主线，会考虑更合理的展示方式。
+
+      %hr
 
       .memo 
         .title <b>简报建议阅读方法：</b>
@@ -153,17 +162,6 @@
             %td
             %td
             %td
-          %tr{:data => {:id => :trainee}}
-            %td.thread{:colspan => 2} 
-              %i.fa.fa-dot-circle-o
-              %span 实习生培训
-            %td.summary
-            %td
-            %td
-            %td
-            %td
-            %td
-            %td
           %tr{:data => {:id => :develop}}
             %td.thread{:colspan => 2} 
               %i.fa.fa-dot-circle-o
@@ -226,19 +224,20 @@
               .s 3. 在过程中有没有遇到操作上的一些问题，或其他“看资料能理解，但一做就出问题了”这样的问题？分别列出？
               .s 4. 今天完成的内容提交到了什么地方？如果是 github 项目的话，给出 commit 地址，如果今天没有 commit 就说没有。
             %td
-              .s 提出了较多的问题，问题已经记录
+              .s 学习滑板书，记录问题并解决问题
               .a-commit
                 .t 问题记录（有的已经关闭了）
                 %a{:href => 'https://github.com/blackdust/depot1/issues/'} https://github.com/blackdust/depot1/issues/
               %br
-              .s 宋亮和李飞已针对每个问题进行了解答。
+              .s 宋亮和李飞已针对每个问题进行了解答，解答过的问题已关闭。
               .s 解答通过 YY 语音进行，一些扼要信息已记录在 issue 中。
+              .s 宋亮建议使用 sublime text 进行代码编写
+              .s 李飞帮助解决了虚拟机在断网情况下使用 host-only 方式进行配置的问题
 
             %td
-              .s 问题较少，偶尔提的问题比较具体
-              .s 下周会加强关注
+              .s 经过提醒，比之前多提了一些问题
               .a-commit
-                .t 问题记录（有的已经关闭了）
+                .t  问题记录（有的已经关闭了）
                 %a{:href => 'https://github.com/hengtangan2025/Depot/issues'} https://github.com/hengtangan2025/Depot/issues
 
 
