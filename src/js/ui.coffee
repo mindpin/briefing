@@ -88,3 +88,27 @@ jQuery ->
 
   if yaml = jQuery('body').data('yaml')
     new YamlLoader yaml
+
+
+# 点击单元格
+# jQuery(document).on 'click', 'table.team td:not(.thread):not(.summary)', ->
+#   jQuery('table.team td')
+#     .addClass('opacity')
+  
+#   jQuery(this)
+#     .closest('tr')
+#     .find('td')
+#     .removeClass('opacity')
+
+#   idx = jQuery(this).index()
+#   if jQuery(this).closest('tr').find('td').first().attr('rowspan') is '2'
+#     idx = idx - 1
+
+
+#   jQuery('table.team tr').each ->
+#     first_td = jQuery(this).find('td').first()
+#     if first_td.attr('rowspan') is '2'
+#       console.log 1
+#       jQuery(this).find('td').eq(idx + 1).removeClass('opacity')
+#     else
+#       jQuery(this).find('td').eq(idx).removeClass('opacity')

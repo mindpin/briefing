@@ -1,0 +1,221 @@
+pinidea_yanfa:
+  summary:
+    - status: common
+      desc: 
+        - 代码集成还差列表翻页部分以及搜索部分未完成
+        - 完成后将开始内部测试和运营预置数据装入
+      commits:
+        - t: 需求工作过程记录
+          url: https://github.com/mindpin/TouchIdea/issues/18
+        - t: UI 集成跟踪记录
+          url: https://github.com/mindpin/TouchIdea/issues/27
+        - t: UI 初稿在线浏览地址
+          url: http://www.mindpin.com/ui-design/
+  lifei:
+    - status: waiting
+      desc: 关于移动应用开发的技术调研
+      commits:
+        - t: Notification API
+          url: https://github.com/mindpin/TouchIdea/issues/23
+        - t: 原生 APP + HTML 混合开发
+          url: https://github.com/mindpin/TouchIdea/issues/24
+      suggestions:
+        - 由于移动浏览器支持有限，暂不考虑 Notification API
+        - 如果对通知有较强的要求，在 pinidea 0.2 迭代完成后考虑 app + html 形式的改造
+    - status: continue
+      desc: 
+        - pinidea 0.2 集成任务
+
+  dd:
+    - status: continue
+      desc: 
+        - pinidea 0.2 集成任务
+      commits: 
+        - t: 投票模型修改
+          url: https://github.com/mindpin/TouchIdea/issues/21
+        - t: 通知实现
+          url: https://github.com/mindpin/TouchIdea/issues/29
+        - t: 随机投票推荐
+          url: https://github.com/mindpin/TouchIdea/issues/28
+        - t: UI 集成跟踪记录
+          url: https://github.com/mindpin/TouchIdea/issues/27
+
+  xiao:
+    - status: done
+      desc: 
+        - 完成了 pinidea 0.2 依赖的商品网址解析
+      bundle:
+        task: https://github.com/mindpin/TouchIdea/issues/22
+        project: https://github.com/mindpin/urlinfo-service
+        demo: http://urlinfo.4ye.me/
+
+    - status: continue
+      desc:
+        - 对京东和淘宝的 API 进行调研
+      commits:
+        - t: 对京东的调研记录（在最后一楼）
+          url: 'https://github.com/mindpin/TouchIdea/issues/22#issuecomment-93946301'
+
+pinidea_yunying:
+  summary:
+    - status: common
+      desc: 
+        - 制定运营计划，由于请假和理解不一致导致的讨论中断等原因，实际上工作只进行了预期时间的一半
+        - 下周需要进行相应的调整
+        - 目前已完成运营计划的 1 5 7 项
+      commits:
+        - t: 运营计划制定记录
+          url: https://github.com/mindpin/TouchIdea/issues/30
+
+  wudi:
+    - status: done
+      desc: 
+        - 根据 ui 改动调整了 pinidea 0.2 页面流图
+        - 增加了点评类型的议题创建过程
+      commits:
+        - t: pinidea 0.2 页面流图
+          url: http://img.teamkn.com/i/iAl0pb3H.png
+    - status: continue
+      desc: 参与制定运营计划
+    - status:
+      dec: 撰写 FAQ
+
+  chilliza:
+    - status: continue
+      desc: 
+        - 调研 30 个团队协作工具的相关信息
+      commits:
+        - t: 调研目标和调研结果记录
+          url: https://github.com/mindpin/problems/issues/82
+    - status: continue
+      desc:
+        - 参与制定运营计划
+
+  ben7th:
+    - status: continue
+      desc: 参与制定运营计划
+
+task_service:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+douyu:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+chatflow:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+img4ye:
+  summary:
+    - status: waiting
+      desc: 
+        - 下轮迭代的各项准备工作已就绪，将在合适的时间开始
+
+eshare:
+  summary:
+    - tr: delayed
+      desc: 等待北控方面进一步反馈
+
+hr:
+  summary:
+    - desc: 暂无反馈，保持跟进
+
+  wudi:
+    - status: continue
+      desc: 持续中
+      commits:
+        - t: 发放记录
+          url: https://workflowy.com/s/FCZgnTOl8c
+        - t: Ruby 人才调研（主要目的是搜集一些典型简历，和典型招聘帖，来调整对 Ruby 人才薪资的认知）
+          url: https://docs.baihui.com/sheet/published.do?rid=mxpis33d0889afa184655ab890533a0eeb7f9
+        - t: 简历处理记录
+          url: http://markdown.4ye.me/sA7p4vTd
+
+develop:
+  summary:
+    - status: waiting
+      desc: 
+        - 迭代的准备工作就绪，将在合适的时间集中进行。
+
+misc:
+  wudi:
+    - status: common
+      desc: 和 processon 团队进行了一些沟通
+      commits:
+        - t: 沟通记录
+          url: https://workflowy.com/s/hb7wStY4P6
+    - status: common
+      desc: 
+        - 和宋亮李飞一起对一份开发需求进行了评估（花了半小时）
+        - 主要目的是了解开发成本估算方法
+      commits:
+        - t: 需求评估结果记录
+          url: http://markdown.4ye.me/TTw9mvXu/22
+
+  xiao:
+    - desc:
+      - 和李飞宋亮进行了关于工作安排，团队配合的谈话
+
+summary:
+  summary:
+    - desc:
+      - pinidea 0.2 本周代码集成未完成。
+      - pinidea 0.2 运营计划制定未完成。
+      - 由于缺乏制定运营计划的经验，导致在运营计划制定过程中，对于目的的理解产生了很多的不一致
+      - 讨论进行的并不顺利。先后两次发生了中断。
+  wudi:
+    - desc: 
+      - 招聘工作跟踪
+      - pinidea 运营计划制定
+      - 一些外联活动
+  chilliza:
+    - desc: 
+      - 持续调研工作
+      - pinidea 运营计划制定
+  lifei:
+    - desc: pinidea 0.2 代码集成
+  dd:
+    - desc: pinidea 0.2 代码集成
+  xiao:
+    - desc: 
+      - pinidea 0.2 基础设施
+      - 调研
+  ben7th:
+    - desc: 
+      - pinidea 0.2 代码集成
+      - pinidea 运营计划制定
+
+
+suggestion:
+  summary:
+    - desc:
+      - 目前看来运营计划制定将落后于集成工作
+      - 需要设置一些开发方面的填空工作
+
+  wudi:
+    - desc: 
+      - 建议更全面地理解一个产品持续迭代需要做好的工作
+      - 而不是总是执着于某一方面
+  chilliza:
+    - desc: 
+      - 注意作息
+      - 如果当下的工作形式主要是讨论，需要保持工作时间的大致一致
+  lifei:
+    - desc: 没有建议
+  dd:
+    - desc: 没有建议
+  xiao:
+    - desc: 
+      - 建议经常思考如何更好地与其他人配合
+      - 区分重要任务和紧急任务
+  ben7th:
+    - desc:
+      - 注意作息

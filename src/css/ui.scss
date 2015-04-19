@@ -109,7 +109,30 @@ body {
     }
   }
 
+  // td:not(.thread):not(.summary):hover {
+  //   &:before {
+  //     content:"";
+  //     position: absolute;
+  //     top:0;left:0;right:0;bottom:0;
+  //     border:solid 2px #ccc;
+  //     pointer-events: none;
+  //   }
+  // }
+
+  // td.opacity {
+  //   // opacity: 0.3;
+  //   &:after {
+  //     content:"";
+  //     position: absolute;
+  //     top:0;left:0;right:0;bottom:0;
+  //     background-color: rgba(black, 0.5);
+  //     pointer-events: none;
+  //   }
+  // }
+
   td {
+    cursor: default;
+    position: relative;
     hr {
       height:5px;
       border-radius:5px;
@@ -411,11 +434,15 @@ table.trainee {
   background-color: #fff;
   border:solid 1px #ddd;
   opacity: 0.8;
+  z-index: 100;
   .t {
     text-align: center;
     height: 30px; line-height: 30px;
   }
   img {
     height: 200px;
+  }
+  @include -below(phone) {
+    display: none;
   }
 }
