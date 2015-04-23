@@ -1,0 +1,254 @@
+pinidea_yanfa:
+  summary:
+    - status: common
+      desc: 
+        - 代码集成完成 90%，已经进行预部署，开发组正对其进行内部测试
+        - 运营组并未参与目前的测试
+        - 目前的预部署版本包含一些 BUG 和未能最终确认的场景实现，因此目前还不适合进行推广工作
+        - 推广工作务必在预置数据准备好并装入之后，按照运营计划严格进行
+        - <b>不可跳步！！！</b>
+      commits:
+        - t: 预部署版本地址
+          url: http://pinidea.pre.4ye.me
+        - t: 需求工作过程记录
+          url: https://github.com/mindpin/TouchIdea/issues/18
+        - t: UI 集成跟踪记录
+          url: https://github.com/mindpin/TouchIdea/issues/27
+        - t: UI 初稿在线浏览地址
+          url: http://www.mindpin.com/ui-design/
+
+      suggestions:
+        - 预部署版本目前还只能让开发组内部访问，由于使用了开发模式的新浪微博登录，因此没有手动添加测试账号的微博用户目前并不能使用微博登录
+        - 如果需要“看看效果”，还需要等几天。目前可以先看 UI 稿。
+
+
+  lifei:
+    - status: waiting
+      desc: 关于移动应用开发的技术调研
+      commits:
+        - t: Notification API
+          url: https://github.com/mindpin/TouchIdea/issues/23
+        - t: 原生 APP + HTML 混合开发
+          url: https://github.com/mindpin/TouchIdea/issues/24
+      suggestions:
+        - 由于移动浏览器支持有限，暂不考虑 Notification API
+        - 如果对通知有较强的要求，在 pinidea 0.2 迭代完成后考虑 app + html 形式的改造
+    - status: continue
+      desc: 
+        - pinidea 0.2 集成任务
+
+  dd:
+    - status: continue
+      desc: 
+        - pinidea 0.2 集成任务
+
+  xiao:
+    - status: done
+      desc: 
+        - 完成了 pinidea 0.2 依赖的商品网址解析
+      bundle:
+        task: https://github.com/mindpin/TouchIdea/issues/22
+        project: https://github.com/mindpin/urlinfo-service
+        demo: http://urlinfo.4ye.me/
+
+    - status: waiting
+      desc:
+        - 对京东和淘宝以及亚马逊的商品信息 API 进行调研
+      commits:
+        - t: 调研记录
+          url: 'https://github.com/mindpin/TouchIdea/issues/22#issuecomment-93946301'
+
+  ben7th:
+    - status: continue
+      desc: 
+        - pinidea 0.2 集成任务
+
+pinidea_yunying:
+  summary:
+    - status: common
+      desc: 
+        - 制定运营计划。
+        - 目前已完成运营计划的 1 2 5 7 项
+        - 剩下 3 4 6 8 项需要讨论确定
+        - 同时本周开始了预置数据准备工作。
+        - 由于数据量大，要求较细致，团队成员基本都投入参与
+      commits:
+        - t: 运营计划制定记录
+          url: https://github.com/mindpin/TouchIdea/issues/30
+
+  wudi:
+    - status: continue
+      desc: 参与制定运营计划
+    - status: continue
+      desc: 撰写软件使用 FAQ
+    - status: continue
+      desc: 撰写用户多渠道反馈汇总表
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+        - 运营预置数据汇总校对任务
+      commits:
+        - t: 预置数据收集执行标准和汇总记录
+          url: https://github.com/mindpin/TouchIdea/issues/34
+
+  chilliza:
+    - status: continue
+      desc:
+        - 参与制定运营计划
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+
+  xiao:
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+
+  lifei:
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+
+  dd:
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+
+  ben7th:
+    - status: continue
+      desc: 参与制定运营计划
+    - status: continue
+      desc:
+        - 运营预置数据准备任务
+
+task_service:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+  chilliza:
+    - status: continue
+      desc: 
+        - 调研 30 个团队协作工具的相关信息
+      commits:
+        - t: 调研目标和调研结果记录
+          url: https://github.com/mindpin/problems/issues/82
+
+douyu:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+chatflow:
+  summary:
+    - tr: delayed
+      status: common
+      desc: 未推进，时机合适时继续
+
+img4ye:
+  summary:
+    - status: waiting
+      desc: 
+        - 下轮迭代的各项准备工作已就绪，将在合适的时间开始
+
+eshare:
+  summary:
+    - tr: delayed
+      desc: 等待北控方面进一步反馈
+
+hr:
+  summary:
+    - desc: 暂无反馈，保持跟进
+
+  wudi:
+    - status: continue
+      desc: 持续中
+      commits:
+        - t: 一些信息汇总（为了简化写在一个地址了。层层链接可能比较深，这次简报先这样，以后我会想办法解决）
+          url: http://markdown.4ye.me/PxzIJ6GG
+
+develop:
+  summary:
+    - status: waiting
+      desc: 
+        - 迭代的准备工作就绪，将在合适的时间集中进行。
+
+misc:
+  wudi:
+    - status: common
+      desc: 
+        - 周一到周四期间不在北京，通过 QQ 语音等方式远程工作；
+
+  ben7th:
+    - status: continue
+      desc: 准备 knowledge Camp 的演示视频。目前还未完成。
+
+summary:
+  summary:
+    - desc:
+      - 本周开始进行 pinidea 0.2 预置数据准备工作。
+      - 这是团队首次按照比较严格的思路，整个过程有跟踪地进行预置数据准备（包括预置数据在推广之后取得得效果，也会得到跟踪）
+      - 希望能够多获取一些运营实践心得
+      - 在预置数据准备工作期间，插空进行开发组程序内部测试，推广材料准备等工作。
+
+  wudi:
+    - desc: 
+      - 周一到周四远程工作
+      - 周五会在北京
+  chilliza:
+    - desc: 
+      - 持续调研工作
+      - pinidea 运营计划制定
+      - 预置数据准备
+  lifei:
+    - desc: 
+      - pinidea 0.2 代码集成
+      - 预发布版的内测试
+      - 预置数据准备
+  dd:
+    - desc: 
+      - pinidea 0.2 代码集成
+      - 预发布版的内测试
+      - 预置数据准备
+
+  xiao:
+    - desc: 
+      - 电商 API 调研
+      - 电商信息解析工具维护
+      - 预置数据准备
+  ben7th:
+    - desc: 
+      - pinidea 0.2 代码集成
+      - pinidea 运营计划制定
+      - 预发布版的内测试
+      - 预置数据准备
+
+
+suggestion:
+  summary:
+    - desc:
+      - 比预期的推广时间可能要晚半周
+      - 无论如何希望争取在五一之前上线
+
+  wudi:
+    - desc: 
+      - 暂无建议
+
+  chilliza:
+    - desc: 
+      - 注意作息
+
+  lifei:
+    - desc: 暂无建议
+
+  dd:
+    - desc: 暂无建议
+
+  xiao:
+    - desc: 找时间了解熟悉 BootStrap ~~
+
+  ben7th:
+    - desc:
+      - 注意作息

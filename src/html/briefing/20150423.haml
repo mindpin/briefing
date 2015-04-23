@@ -1,0 +1,264 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body{:data => {:yaml => '20150423.yaml'}}
+    .header
+      .container-full
+        .row
+          .col-pad-12
+            %a.back{:href => '../'}
+              %i.fa.fa-arrow-left
+              %span 返回
+            .t 2015 年 4 月 23 日，周四，工作简报
+
+    .main
+      .legends
+        .t 图例：
+        .legend.summary
+          %span 总结信息：
+        .legend.continue
+          %span 正在持续：
+        .legend.danger
+          %span 存在风险：
+        .legend.waiting
+          %span 等待跟进：
+      .memo{:style => 'color:#2A70E8;'}
+        .title{:style => 'color:#FF4400;'} 
+          %span 由于工作时间安排等因素，近期简报提交周期不太固定，抱歉。
+          %br
+          %span 工作仍然集中在 pinidea 主线上，其他主线活动不多，记录比较简略
+
+
+      %hr
+
+      .memo 
+        .title <b>简报建议阅读方法：</b>
+        .s 1. 如果比较关注自己的或者某个特定成员的所有工作状态和提交物，可以纵向地看。每个人的名字和头像下面会列出各条主线的工作以及总结；
+        .s 2. 如果比较关注每条主线的变化，可以横向地看。每条产品主线右侧会列出主线的总结以及每个人的工作状态和提交物；
+
+      .reading-tips
+        .t 建议阅读方式
+        %a{:href => 'http://img.teamkn.com/i/z0og4Zvs.png'}
+          %img{:src => 'http://img.teamkn.com/i/z0og4Zvs.png@200h'}
+
+      %table.table.table-bordered.team
+        %thead
+          %th{:colspan => 2}
+            %span 工作主线
+          %th
+            %span 小结
+          %th.member{:data => {:id => :wudi}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            %span 吴笛
+          %th.member{:data => {:id => :chilliza}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            %span 夏实
+          %th.member{:data => {:id => :lifei}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            %span 李飞
+          %th.member{:data => {:id => :dd}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            %span 陈啸峰
+          %th.member{:data => {:id => :xiao}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            %span 肖少富
+          %th.member{:data => {:id => :ben7th}}
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            %span 宋亮
+        %tbody
+          %tr{:data => {:id => :pinidea_yanfa}}
+            %td.thread{:rowspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span pinIdea
+            %td.thread 研发
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+
+          %tr{:data => {:id => :pinidea_yunying}}
+            %td.thread 运营
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :task_service}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 团队协作工具/方法
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :douyu}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 斗鱼直播分析工具
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :chatflow}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span ChatFlow 展示组件
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :img4ye}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span img4ye
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :eshare}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span eshare 区县版
+            %td.summary
+            %td
+            %td
+            %td
+            %td 
+            %td
+            %td
+          %tr{:data => {:id => :hr}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span inhouse 人员招募
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :develop}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 开发标准化推进
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :misc}}
+            %td.thread{:colspan => 2} 
+              %i.fa.fa-dot-circle-o
+              %span 杂项
+            %td.summary
+            %td
+            %td
+            %td
+            %td
+            %td
+            %td
+          %tr{:data => {:id => :summary}}
+            %td.summary.thread{:rowspan => 2} 小结
+            %td.summary.thread 状态总结
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+          %tr{:data => {:id => :suggestion}}
+            %td.summary.thread 工作建议
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+            %td.summary
+
+      %table.table.table-bordered.trainee
+        %thead
+          %th
+            %span 实习小结
+          %th.member
+            %span 李博超
+          %th.member
+            %span 周剑斌
+        %tbody
+          %tr
+            %td
+              .s 从本周四开始，每天下午五点会记录实习工作状态，并记录
+              .s 记录工作由宋亮或李飞进行
+              .s 目前的问题是：
+              %hr
+              .s 1. 今天学习/练习了哪些内容，对应什么资料的哪一部分？（具体到页或目录）
+              .s 2. 在过程中有没有遇到对资料上的一些内容理解有困难的问题？分别列出。
+              .s 3. 在过程中有没有遇到操作上的一些问题，或其他“看资料能理解，但一做就出问题了”这样的问题？分别列出？
+              .s 4. 今天完成的内容提交到了什么地方？如果是 github 项目的话，给出 commit 地址，如果今天没有 commit 就说没有。
+            %td
+              .s 滑板书大致内容已学完，布置了新的开发练习任务：
+              .s 结合豆瓣 API 来实现一个模拟在线购书系统
+              .a-commit
+                .t 任务要求地址
+                %a{:href => 'https://github.com/mindpin/problems/issues/83'} https://github.com/mindpin/problems/issues/83
+
+              %hr
+              .s 提交了模拟购书系统的示意图
+              .a-commit
+                .t 软件示意图（思维导图形式）
+                %a{:href => 'https://www.processon.com/view/553772ffe4b0aaa6d93bb9d8'} https://www.processon.com/view/553772ffe4b0aaa6d93bb9d8
+
+              %hr
+              .s 将之前已经完成的滑板书学习过程中开发的程序部署到了 heroku
+              .a-commit
+                .t 部署地址
+                %a{:href => 'whispering-woodland-4387.herokuapp.com'} whispering-woodland-4387.herokuapp.com
+
+            %td
+              .s 滑板书大致内容已学完，布置了新的开发练习任务：
+              .s 结合豆瓣 API 来实现一个模拟在线购书系统
+              .a-commit
+                .t 任务要求地址
+                %a{:href => 'https://github.com/mindpin/problems/issues/83'} https://github.com/mindpin/problems/issues/83
+
+              %hr
+              .s 提交了模拟购书系统的界面关系图
+              .a-commit
+                .t 软件示意图（关系图形式）
+                %a{:href => 'https://www.processon.com/view/55377315e4b0aaa6d93bba5e'} https://www.processon.com/view/55377315e4b0aaa6d93bba5e
+
+              %hr
+              .s 将之前已经完成的滑板书学习过程中开发的程序部署到了 heroku
+              .a-commit
+                .t 部署地址
+                %a{:href => 'http://protected-badlands-3651.herokuapp.com/'} http://protected-badlands-3651.herokuapp.com/
+
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../lib/js-yaml.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui.js'}
