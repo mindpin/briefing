@@ -116,15 +116,15 @@ load_page = (hash)->
 
 
 
-jQuery('.tiles').hammer().bind 'swipeleft', (evt)->
+jQuery('.tiles.thread').hammer().bind 'swipeleft', (evt)->
   console.debug 'swipeleft'
   return if not jQuery(this).hasClass('current')
-  return if jQuery(this).parent().find('.tiles').length is 1
+  return if jQuery(this).parent().find('.tiles.thread').length is 1
 
   $current = jQuery(this)
-  $next = $current.next('.tiles')
+  $next = $current.next('.tiles.thread')
   if $next.length is 0
-    $next = $current.parent().find('.tiles').first()
+    $next = $current.parent().find('.tiles.thread').first()
 
   $current.removeClass('current').show()
     .animate
@@ -142,15 +142,15 @@ jQuery('.tiles').hammer().bind 'swipeleft', (evt)->
       location.hash = "detail/#{$next.data('thread')}"
 
 
-jQuery('.tiles').hammer().bind 'swiperight', (evt)->
+jQuery('.tiles.thread').hammer().bind 'swiperight', (evt)->
   console.debug 'swiperight'
   return if not jQuery(this).hasClass('current')
-  return if jQuery(this).parent().find('.tiles').length is 1
+  return if jQuery(this).parent().find('.tiles.thread').length is 1
 
   $current = jQuery(this)
-  $prev = $current.prev('.tiles')
+  $prev = $current.prev('.tiles.thread')
   if $prev.length is 0
-    $prev = $current.parent().find('.tiles').last()
+    $prev = $current.parent().find('.tiles.thread').last()
 
   $current.show()
     .animate

@@ -98,19 +98,19 @@
     }
   };
 
-  jQuery('.tiles').hammer().bind('swipeleft', function(evt) {
+  jQuery('.tiles.thread').hammer().bind('swipeleft', function(evt) {
     var $current, $next;
     console.debug('swipeleft');
     if (!jQuery(this).hasClass('current')) {
       return;
     }
-    if (jQuery(this).parent().find('.tiles').length === 1) {
+    if (jQuery(this).parent().find('.tiles.thread').length === 1) {
       return;
     }
     $current = jQuery(this);
-    $next = $current.next('.tiles');
+    $next = $current.next('.tiles.thread');
     if ($next.length === 0) {
-      $next = $current.parent().find('.tiles').first();
+      $next = $current.parent().find('.tiles.thread').first();
     }
     $current.removeClass('current').show().animate({
       'margin-left': '-100%'
@@ -127,19 +127,19 @@
     });
   });
 
-  jQuery('.tiles').hammer().bind('swiperight', function(evt) {
+  jQuery('.tiles.thread').hammer().bind('swiperight', function(evt) {
     var $current, $prev;
     console.debug('swiperight');
     if (!jQuery(this).hasClass('current')) {
       return;
     }
-    if (jQuery(this).parent().find('.tiles').length === 1) {
+    if (jQuery(this).parent().find('.tiles.thread').length === 1) {
       return;
     }
     $current = jQuery(this);
-    $prev = $current.prev('.tiles');
+    $prev = $current.prev('.tiles.thread');
     if ($prev.length === 0) {
-      $prev = $current.parent().find('.tiles').last();
+      $prev = $current.parent().find('.tiles.thread').last();
     }
     $current.show().animate({
       'margin-left': '100%'
