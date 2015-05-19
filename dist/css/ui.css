@@ -5435,7 +5435,8 @@ body.mobile {
         text-decoration: none;
         position: absolute;
         top: 10px;
-        right: 5px; }
+        right: 5px;
+        display: none; }
         body.mobile .tiles .tile.summary a.back:active, body.mobile .tiles .tile.summary a.detail:active {
           background-color: #ddd; }
         body.mobile .tiles .tile.summary a.back i, body.mobile .tiles .tile.summary a.detail i {
