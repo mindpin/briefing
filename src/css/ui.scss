@@ -47,6 +47,11 @@ body {
     .date span {
       font-family: "source-code", "微软雅黑";
     }
+    .date i {
+      display: inline-block;
+      width: 20px;
+      text-align: center;
+    }
     a {
       margin-left: 5px;
     }
@@ -445,4 +450,240 @@ table.trainee {
   @include -below(phone) {
     display: none;
   }
+}
+
+// ----------- 20150518 新版 移动版
+
+@mixin height($h) {
+  height: $h; line-height: $h;
+}
+
+@mixin shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+$mobile-header-height: 65px;
+
+body.mobile {
+  background-color: #eee;
+  color: #666;
+  a{
+    // color: $area-info;
+  }
+
+  .mobile-header {
+    @include height($mobile-header-height);
+    @include shadow;
+    background-color: #fafafa;
+    position: absolute;
+    top:0;left:0;right:0;
+    z-index:1;
+    .t {
+      text-align: center;
+      font-size: 16px;
+      @include height(40px);
+    }
+    .help {
+      @include height(24px);
+      font-size: 12px;
+      text-align: center;
+      border-top:dashed 1px #ddd;
+      background-color: $area-dawn;
+      display: none;
+    }
+  }
+
+  &.index .mobile-header .help.index {display:block;}
+  &.detail .mobile-header .help.detail {display:block;}
+  &.member-detail .mobile-header .help.member-detail {display:block;}
+
+  .tiles {
+    position: absolute;
+    top: $mobile-header-height; bottom:0;
+    left:0; width: 100%;
+    overflow-y: auto;
+    display: none;
+
+    &.current{
+      display: block;
+    }
+
+    .tile {
+      background-color: #fafafa;
+      margin: 10px;
+      @include shadow;
+      position: relative;
+      padding-left: 15px;
+      padding-right: 5px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top:0;left:0;bottom:0;width:10px;
+        background-color: #666;
+      }
+
+      .t {
+        font-size: 20px;
+        @include height(50px);
+        padding-left: 10px;
+      }
+      .desc {
+        border-top: solid 1px #e9e9e9;
+        padding: 10px;
+        line-height: 22px;
+
+        label {
+          padding: 0 5px;
+          margin: 0;
+          font-weight: normal;
+          border-radius:3px;
+          font-size: 12px;
+          @include height(16px);
+          position: relative;
+          top: 2px;
+          float: left;
+          margin-right: 5px;
+        }
+
+        label {
+          background-color: #f1f1f1;
+          color: #999;
+        }
+        label.head {
+          background-color: $area-success;
+          color: white;
+        }
+
+        .submit {
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          background-color: #f1f1f1;
+          word-break: break-all;
+          &:last-child {margin-bottom: 0;}
+
+          .smemo {
+            color: #999;
+            margin-top: 5px;
+          }
+        }
+
+        .submit.bundle {
+          background-color: #F8FFE8;
+          a{color:#005500;}
+          .task:before {content:"任务：";color:rgba(black, 0.4);}
+          .repo:before {content:"工程：";color:rgba(black, 0.4);}
+          .demo:before {content:"演示：";color:rgba(black, 0.4);}
+        }
+
+        .t2 {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .tile.summary {
+      &:before {background-color: $area-hot;}
+
+      a.back, a.detail{
+        font-size: 12px;
+        float: right;
+        @include height(30px);
+        border-radius: 3px;
+        background-color: #f1f1f1;
+        margin-top: 10px;
+        padding:0 10px;
+        color: #666;
+        text-decoration: none;
+        display: none;
+        &:active {
+          background-color: #ddd;
+        }
+        i {margin-right:3px;}
+      }
+    }
+
+    .tile.member {
+      &:before {background-color: $area-info;}
+      .m {
+        @include clearfix;
+        @include height(50px);
+        position: relative;
+        img.avatar {
+          float: left;
+          border-radius: 100px;
+          width: 30px;
+          height: 30px;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+        .name {
+          margin-left: 50px;
+          font-size: 20px;
+        }
+
+        a.show-member-detail {
+          font-size: 12px;
+          @include height(30px);
+          border-radius: 3px;
+          background-color: #f1f1f1;
+          padding:0 10px;
+          color: #666;
+          text-decoration: none;
+          position: absolute;
+          top: 10px; right: 0px;
+          &:active {
+            background-color: #ddd;
+          }
+          i {margin-right:3px;}
+        }
+      }
+    }
+  }
+}
+
+body.mobile.index, body.mobile.member-detail {
+  .mobile-main {
+    position: absolute;
+    top:$mobile-header-height;left:0;right:0;bottom:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .tiles {
+    position: static;
+    display: block;
+    overflow: visible;
+    .tile.summary {
+      margin-bottom: 0;
+      .desc {display:none;}
+    }
+    .tile.member {display:none;}
+  }
+}
+
+body.mobile.member-detail {
+  .tile.summary {
+    &:before {background-color: $area-info;}
+    a.detail {display:block;}
+  }
+
+  .tile.member {
+    .m {display:none;}
+    // .m + .desc{border-top:0 none;}
+    margin-top: 0;
+  }
+
+  .tiles.member-summary {
+    .tile.member {
+      .m {display:block;}
+      margin-top: 10px;
+    }
+  }
+}
+
+body.mobile.detail {
+  .tile.summary a.back {display:block;}
 }

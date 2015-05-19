@@ -7,6 +7,9 @@ coffee = require 'gulp-coffee'
 sass   = require 'gulp-ruby-sass'
 haml   = require 'gulp-ruby-haml'
 
+newer   = require 'gulp-newer'
+changed = require 'gulp-changed'
+
 # 防止编译 coffee 过程中 watch 进程中止
 plumber = require("gulp-plumber")
 
@@ -15,17 +18,17 @@ app =
     js:   'src/js/**/*.coffee'
     css:  'src/css/*.scss'
     html: 'src/html/**/*.haml'
+    mobile: 'src/mobile/**/*.haml'
   dist:
     js:   'dist/js'
     css:  'dist/css'
     html: '.'
+    mobile: 'mobile'
 
 gulp.task 'js', ->
   gulp.src app.src.js
     .pipe plumber()
-    # .pipe smaps.init()
     .pipe coffee()
-    # .pipe smaps.write('../maps')
     .pipe gulp.dest(app.dist.js)
 
 gulp.task 'css', ->
@@ -54,15 +57,22 @@ gulp.task 'html', ->
       ].join ' '
     .pipe gulp.dest(app.dist.html)
 
-gulp.task 'build', [
-  'js'
-  'css'
-  'html'
-]
+gulp.task 'mobile', ->
+  gulp.src app.src.mobile
+    .pipe haml()
+    .on 'error', (err)->
+      util.log [
+        err.plugin,
+        util.colors.red err.message
+        err.message
+      ].join ' '
+    .pipe gulp.dest(app.dist.mobile)
 
+gulp.task 'build', ['js', 'css', 'html', 'mobile']
 gulp.task 'default', ['build']
 
 gulp.task 'watch', ['build'], ->
   gulp.watch app.src.js, ['js']
   gulp.watch app.src.css, ['css']
   gulp.watch app.src.html, ['html']
+  gulp.watch app.src.mobile, ['mobile']

@@ -1,0 +1,428 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title MINDPIN 团队工作简报
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %link{:rel => 'stylesheet', :href => '../dist/css/ui.css'}
+
+  %body.mobile
+    .mobile-header
+      .t 简报 2015-05-06 ~ 2015-05-18
+      .help.index 点击主线名称以查看详情
+      .help.detail
+        %i.fa.fa-arrow-left
+        %span 左右滑动以查看其他主线
+        %i.fa.fa-arrow-right
+      .help.member-detail
+        %span 这里显示了个人工作详情
+
+    .mobile-main
+      .tiles.member-summary
+        .tile.member{:data => {:member => :wudi}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            .name 吴笛
+          .desc
+            .s 在这一段时间内主要负责 pinidea 0.2 的运营预置数据准备工作，以及运营推广需要用到的文档撰写工作
+            .s 下一阶段的工作主要围绕移动课程制作工具的需求分析来展开。
+            .s 从五月下旬开始，2 - 3 条主线可能会同时穿插进行，需要调整优先级的平衡，保持及时沟通。
+
+        .tile.member{:data => {:member => :chilliza}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            .name 夏实
+          .desc
+            .s 参与 pinidea 0.2 运营预置数据准备工作。
+            .s 并且同时在进行团队任务协作工具的调研工作，目前已提交第一批调研结果。
+            .s 接下来的工作会围绕移动课程制作工具的需求分析和设计来展开。
+
+        .tile.member{:data => {:member => :lifei}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            .name 李飞
+          .desc
+            .s 5 月 11 号之前参与 pinidea 的数据准备和内测工作。
+            .s 从 5 月 11 日开始，已投入更多的时间在 img4ye 0.3 主线。目前负责 img4ye 此次功能改版的总体开发集成规划工作
+            .s 对团队协作工具的研究也保持着一定的关注
+
+        .tile.member{:data => {:member => :dd}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            .name 陈啸峰
+          .desc
+            .s 5 月 11 号之前参与 pinidea 的数据准备和内测工作。
+            .s 从 5 月 11 日开始，已投入更多的时间在 img4ye 0.3 主线。目前负责 img4ye 此次功能改版中的图片尺寸管理和打包下载逻辑开发
+
+        .tile.member{:data => {:member => :xiao}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            .name 肖少富
+          .desc
+            .s 5 月 11 号之前参与 pinidea 的数据准备和内测工作。
+            .s 从 5 月 11 日开始，已投入更多的时间在 img4ye 0.3 主线。目前负责 img4ye 此次功能改版中的视频音频文件编码处理和格式转换逻辑开发
+
+        .tile.member{:data => {:member => :ben7th}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            .name 宋亮
+          .desc
+            .s 5 月 11 号之前参与 pinidea 的数据准备和内测工作。
+            .s 5 月 11 号开始，投入较多的时间在 pinidea 内测反馈问题处理以及运营计划后半部分的制定工作
+            .s 同时，负责 img4ye 的 UI 部分设计开发工作，但并未投入时间
+            .s 5 月 17 号开始，投入较多的时间在简报体验改版的工作
+
+      .tiles.thread{:data => {:thread => :pinidea}}
+        .tile.summary
+          .t 
+            %span pinidea 0.2 pre-beta
+          .desc
+            .t2 总体情况：
+            .s 5 月 8 号前主要在进行预置数据准备。由于对数据量预计不足导致时间延误一周。目前已经准备完毕。
+            .s 5 月 13 号完成了运营推广计划的制定
+          .desc
+            .s 截至目前为止，仍在继续进行宣传材料的准备，以及营销账号准备
+            .s 截至目前为止，仍在继续处理内测反馈的体验问题
+          .desc
+            .s 预计上线时间将比事先计划延后三周。主要原因是预置数据准备工作量预估不足；以及较多影响推广的问题需要改进。为了保证团队工作均匀，已经启动 img4ye 0.3 主线的开发工作，以及已经启动 slider 项目的需求工作
+          .desc
+            .s 为了便于推广，目前的程序版本已经修改为：当通过 PC 浏览器访问时，会自动切换到一个“手机模拟”的访问界面并显示二维条码。便于更平顺地切换到通过手机访问。
+            .submit
+              .st 内部测试版访问地址
+              %a{:href => 'http://pinidea.pre.4ye.me'} pinidea.pre.4ye.me
+              .smemo 
+                .s 目前内部测试版依然需要通过新浪微博登录。由于使用的是测试账号，欲访问则需要把用于登录的微博账号告知宋亮或李飞以添加到测试成员列表。
+                .s 实际上线时将允许在不登录的情况下进入查看部分内容。此修改项已作为体验改进问题列入修改清单。
+
+
+        .tile.member{:data => {:member => :wudi}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            .name 吴笛
+          .desc
+            .s 
+              %label.head 主持
+              %span 预置数据准备和核对
+            .submit
+              .st 数据汇总记录
+              %a{:href => 'https://github.com/mindpin/TouchIdea/issues/34'} mindpin/TouchIdea#34
+              .smemo 目前已经收集到三批次数据。正在进行内容体验方面的检查核对。
+          .desc
+            .s
+              %label.head 主持
+              %span 撰写 FAQ 文档
+            .submit
+              %a{:href => 'http://markdown.4ye.me/IQWYKaG8/36'} markdown.4ye.me/IQWYKaG8/36
+              .smemo 这些信息将置入产品帮助
+          .desc
+            .s
+              %label.head 主持 
+              %span 撰写反馈意见汇总表格
+            .submit
+              .st 汇总表格模板
+              %a{:href => 'https://docs.baihui.com/sheet/published.do?rid=mxpis7650d652818b4306abd17efd625155bc'} docs.baihui.com/sheet/published.do?rid=mxpis7650d652818b4306abd17efd625155bc
+              .smemo 将用于记录 pinidea 的用户反馈
+          .desc
+            .s 
+              %label 参与
+              %span 制定运营推广计划
+            .s
+              %label 参与
+              %span 内部体验测试
+
+        .tile.member{:data => {:member => :chilliza}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            .name 夏实
+          .desc
+            .s 
+              %label 参与
+              %span 预置数据准备
+            .s 
+              %label 参与
+              %span 制定运营推广计划
+            .s
+              %label 参与
+              %span 内部体验测试
+
+        .tile.member{:data => {:member => :lifei}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            .name 李飞
+          .desc
+            .s 
+              %label.head 主持
+              %span 开发/改进预置数据装入接口
+            .s 
+              %label.head 主持
+              %span 开发/改进全文搜索
+            .s 
+              %label 参与
+              %span 预置数据准备
+            .s
+              %label 参与
+              %span 内部体验测试
+
+        .tile.member{:data => {:member => :dd}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            .name 陈啸峰
+          .desc
+            .s 
+              %label.head 主持
+              %span 开发/改进投票模型
+            .s 
+              %label.head 主持
+              %span 开发/改进通知系统
+            .s 
+              %label 参与
+              %span 预置数据准备
+            .s
+              %label 参与
+              %span 内部体验测试
+
+        .tile.member{:data => {:member => :xiao}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            .name 肖少富
+          .desc
+            .s 
+              %label.head 主持
+              %span 开发/改进商品网址解析服务
+            .submit.bundle
+              .task
+                %a{:href => 'https://github.com/mindpin/TouchIdea/issues/22'} mindpin/TouchIdea#22
+              .repo
+                %a{:href => 'https://github.com/mindpin/urlinfo-service'} mindpin/urlinfo-service
+              .demo
+                %a{:href => 'http://urlinfo.4ye.me/'} urlinfo.4ye.me
+          .desc
+            .s 
+              %label 参与
+              %span 预置数据准备
+            .s
+              %label 参与
+              %span 内部体验测试
+
+        .tile.member{:data => {:member => :ben7th}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            .name 宋亮
+          .desc
+            .s
+              %label.head 主持
+              %span 运营推广计划制定
+            .submit
+              %a{:href => 'https://github.com/mindpin/TouchIdea/issues/30'} mindpin/TouchIdea#30
+              .smemo 计划中涉及到的一些材料，包括反馈表格，宣传材料需要另行准备
+          .desc
+            .s
+              %label.head 主持
+              %span 内部体验测试以及反馈整理
+            .submit
+              .st 内测轮次要求和反馈情况记录
+              %a{:href => 'https://github.com/mindpin/TouchIdea/issues/35'} mindpin/TouchIdea#35
+              .smemo 目前反馈的问题修改完后还需要再进行一轮内测
+          .desc
+            .s
+              %label.head 主持
+              %span 内测版本体验问题修正
+            .submit
+              .st 问题分类汇总整理和改进记录
+              %a{:href => 'https://github.com/mindpin/TouchIdea/issues/36'} mindpin/TouchIdea#36
+              .smemo 工作量较大。目前仍然在修改中。能分配的任务已经分配出去了，剩下的都是很难分的。
+
+      .tiles.thread{:data => {:thread => :img4ye}}
+        .tile.summary
+          .t 
+            %span img4ye 0.3
+          .desc
+            .t2 总体情况：
+            .s 之前的需求和技术调研工作已完全就绪，正在进行 0.3 版的开发
+            .s 0.3 最主要的改动是后端存储将由阿里云 OSS 转移至七牛云存储。改动完成后，将极大改善上传性能。
+            .s 并且，基于七牛云存储提供的功能，正在开发音视频转码支持服务，以便用于不久后要开发的课程制作以及团队任务产品。
+            .s 截至 5 月 18 日，非 UI 部分开发工作已完成 80%
+
+        .tile.member{:data => {:member => :lifei}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            .name 李飞
+          .desc
+            .s
+              %label.head 主持
+              %span 0.3 版总体开发集成工作
+            .submit
+              .st 集成过程跟踪记录
+              %a{:href => 'https://github.com/mindpin/image-service/issues/18'} mindpin/image-service#18
+              .smemo 依然采用 pinidea 0.2 开始的 UI / 非 UI 分离开发的做法
+          .desc
+            .s
+              %label.head 主持
+              %span 开发图片上传部分逻辑。包括普通上传，粘贴上传，拖拽上传。
+
+
+        .tile.member{:data => {:member => :xiao}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/OnQXU9SX.png'}
+            .name 肖少富
+          .desc
+            .s
+              %label.head 主持
+              %span 视频/音频编码处理和格式转换相关开发工作
+
+        .tile.member{:data => {:member => :dd}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/ZDIuVAiT.png'}
+            .name 陈啸峰
+          .desc
+            .s
+              %label.head 主持
+              %span 图片尺寸处理，尺寸配置管理，打包下载相关开发工作
+
+        .tile.member{:data => {:member => :ben7th}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            .name 宋亮
+          .desc
+            .s
+              %label.head 主持
+              %span UI 部分开发工作。目前尚未开始进行。
+
+      .tiles.thread{:data => {:thread => :slider}}
+        .tile.summary
+          .t 
+            %span slider 0.1
+          .desc
+            .t2 总体情况：
+            .s slider (暂定名) 是一个主要针对移动平台的课程/演示文稿制作工具。产品目标是做到简单易用，迅速上手；能够让大部分人快速组织内容，开发课程演示。
+            .s 项目于 5 月 18 日启动
+            .s 正在进行需求分析工作涉及的相关产品调研部分
+            .s 计划于本月内完成需求分析和产品 mockup 工作。如有可能，完成一部分 UI 工作。
+
+        .tile.member{:data => {:member => :ben7th}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            .name 宋亮
+          .desc
+            .s
+              %label.head 主持
+              %span slider 需求分析工作
+            .submit
+              .st 产品初期规划和需求工作推进记录
+              %a{:href => 'https://github.com/mindpin/slider/issues/1'} mindpin/slider#1
+
+        .tile.member{:data => {:member => :wudi}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/y4tvQ9SD.png'}
+            .name 吴笛
+          .desc
+            %label 参与
+            .s 收集了一些相关产品信息以补充调研目标
+
+      .tiles.thread{:data => {:thread => :tasks}}
+        .tile.summary
+          .t 
+            %span 团队任务工具研究
+          .desc
+            .t2 总体情况：
+            .s 5 月初已完成任务记录工具原型，再经过少许修改，近期内将启用。
+            .s 计划于六月底完成包含“任务记录 - 简报生成”逻辑的第一版系统。由于此系统的特殊性，需求来源于平时的工作记录和简报撰写体会；以简报为基础，逐步优化改良，并进一步固化产品的初期形态；同时简报也可以作为产品最初的体验展示。
+            / blahblahblahblahblahblahblahblahblahblah
+            .s 
+            为了提炼需求和改善体验，正在对 30 个团队协作工具进行调研。目前已对 Teambox, Projecturf, Apollo 进行调研
+
+        .tile.member{:data => {:member => :ben7th}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/RTB15zIX.png'}
+            .name 宋亮
+          .desc
+            .s
+              %label.head 主持
+              %span 简报记录和简报展示界面改进
+            .submit
+              .st 简报目录
+              %a{:href => 'http://www.mindpin.com/briefing/'} www.mindpin.com/briefing/
+
+        .tile.member{:data => {:member => :chilliza}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/mQTXjy9m.png'}
+            .name 夏实
+          .desc
+            .s
+              %label.head 主持
+              %span 30 个团队协作产品调研工作（目前进展 3/30）
+            .submit
+              .st 调研记录
+              %a{:href => 'https://github.com/mindpin/problems/issues/82'} mindpin/problems#82
+
+        .tile.member{:data => {:member => :lifei}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            .name 李飞
+          .desc
+            .s
+              %label.head 主持
+              %span 任务记录工具开发与改进
+            .submit.bundle
+              .repo
+                %a{:href => 'https://github.com/mindpin/task-page'} mindpin/task-page
+              .demo
+                %a{:href => 'http://task.4ye.me/'} task.4ye.me
+              .smemo 目前只能使用内部预设的账号登录；目前未启用该系统记录每日状态但很快将启用。
+
+      .tiles.thread{:data => {:thread => :misc}}
+        .tile.summary
+          .t 
+            %span 杂项工作与备注
+        .tile.member{:data => {:member => :lifei}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/aUCZwjAD.png'}
+            .name 李飞
+          .desc
+            .s
+              %label.head 主持
+              %span linode 服务器的 Monit 监控部署
+            .submit
+              .st 访问地址
+              %a{:href => 'http://4ye.me:2812/'} 4ye.me:2812
+            .submit
+              .st 使用说明
+              %a{:href => 'http://docs.4ye.me/notes/554c926b6c6f632bc8060000'} docs.4ye.me/notes/554c926b6c6f632bc8060000
+
+      .tiles.thread{:data => {:thread => :trainee}}
+        .tile.summary
+          .t 
+            %span 实习
+        .tile.member{:data => {:member => :libochao}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/icC1rJUu.png'}
+            .name 李博超
+          .desc
+            .s 已经完成了模拟购书系统的开发，并部署到 heroku
+            .s 部署过程中由于数据库脚本的问题，遇到了一些麻烦，通过自己的努力解决掉了。
+            .submit.bundle
+              .task
+                %a{:href => 'https://github.com/mindpin/problems/issues/83'} mindpin/problems#83
+              .repo
+                %a{:href => 'https://github.com/blackdust/doubanbook'} blackdust/doubanbook
+              .demo
+                %a{:href => 'http://gentle-thicket-3540.herokuapp.com'} gentle-thicket-3540.herokuapp.com
+              .smemo 由于周剑斌尚未完成，因此目前暂时未进行验收
+          .desc
+            .s 由于等待周剑斌完成才能验收，目前正在学习 codecademy 上的 javascript / jQuery 教学课程
+            .s 正在帮助周剑斌解决开发过程中遇到的问题
+
+        .tile.member{:data => {:member => :zhoujianbin}}
+          .m
+            %img.avatar{:src => 'http://img.teamkn.com/i/GRTRhPYT.png'}
+            .name 周剑斌
+          .desc
+            .s 模拟购书系统的开发并没有及时完成。
+            .s 正在在李博超的配合下推进进度。都完成后才能进行验收。
+            .s 据李博超总结，目前 1) 搜索和订单处理; 2) 分页逻辑; 3) 订单查询; 存在一些需要处理的问题。
+
+
+
+    %script{:type => 'text/javascript', :src => '../lib/jquery-2.1.1.min.js'}
+    %script{:type => 'text/javascript', :src => '../lib/hammer.min.js'}
+    %script{:type => 'text/javascript', :src => '../dist/js/ui-mobile.js'}

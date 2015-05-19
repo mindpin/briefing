@@ -4998,6 +4998,10 @@ body {
   margin-bottom: 10px; }
   .briefings .briefing .date span {
     font-family: "source-code", "微软雅黑"; }
+  .briefings .briefing .date i {
+    display: inline-block;
+    width: 20px;
+    text-align: center; }
   .briefings .briefing a {
     margin-left: 5px; }
 
@@ -5304,3 +5308,205 @@ table.trainee {
   @media (max-width: 767px) {
     .reading-tips {
       display: none; } }
+
+body.mobile {
+  background-color: #eee;
+  color: #666; }
+  body.mobile .mobile-header {
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
+    body.mobile .mobile-header .t {
+      text-align: center;
+      font-size: 16px;
+      height: 40px;
+      line-height: 40px; }
+    body.mobile .mobile-header .help {
+      height: 24px;
+      line-height: 24px;
+      font-size: 12px;
+      text-align: center;
+      border-top: dashed 1px #ddd;
+      background-color: #FFFBE3;
+      display: none; }
+  body.mobile.index .mobile-header .help.index {
+    display: block; }
+  body.mobile.detail .mobile-header .help.detail {
+    display: block; }
+  body.mobile.member-detail .mobile-header .help.member-detail {
+    display: block; }
+  body.mobile .tiles {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    display: none; }
+    body.mobile .tiles.current {
+      display: block; }
+    body.mobile .tiles .tile {
+      background-color: #fafafa;
+      margin: 10px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      position: relative;
+      padding-left: 15px;
+      padding-right: 5px; }
+      body.mobile .tiles .tile:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 10px;
+        background-color: #666; }
+      body.mobile .tiles .tile .t {
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px; }
+      body.mobile .tiles .tile .desc {
+        border-top: solid 1px #e9e9e9;
+        padding: 10px;
+        line-height: 22px; }
+        body.mobile .tiles .tile .desc label {
+          padding: 0 5px;
+          margin: 0;
+          font-weight: normal;
+          border-radius: 3px;
+          font-size: 12px;
+          height: 16px;
+          line-height: 16px;
+          position: relative;
+          top: 2px;
+          float: left;
+          margin-right: 5px; }
+        body.mobile .tiles .tile .desc label {
+          background-color: #f1f1f1;
+          color: #999; }
+        body.mobile .tiles .tile .desc label.head {
+          background-color: #4CC85E;
+          color: white; }
+        body.mobile .tiles .tile .desc .submit {
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          background-color: #f1f1f1;
+          word-break: break-all; }
+          body.mobile .tiles .tile .desc .submit:last-child {
+            margin-bottom: 0; }
+          body.mobile .tiles .tile .desc .submit .smemo {
+            color: #999;
+            margin-top: 5px; }
+        body.mobile .tiles .tile .desc .submit.bundle {
+          background-color: #F8FFE8; }
+          body.mobile .tiles .tile .desc .submit.bundle a {
+            color: #005500; }
+          body.mobile .tiles .tile .desc .submit.bundle .task:before {
+            content: "任务：";
+            color: rgba(0, 0, 0, 0.4); }
+          body.mobile .tiles .tile .desc .submit.bundle .repo:before {
+            content: "工程：";
+            color: rgba(0, 0, 0, 0.4); }
+          body.mobile .tiles .tile .desc .submit.bundle .demo:before {
+            content: "演示：";
+            color: rgba(0, 0, 0, 0.4); }
+        body.mobile .tiles .tile .desc .t2 {
+          font-weight: bold;
+          margin-bottom: 5px; }
+    body.mobile .tiles .tile.summary:before {
+      background-color: #FF4400; }
+    body.mobile .tiles .tile.summary a.back, body.mobile .tiles .tile.summary a.detail {
+      font-size: 12px;
+      float: right;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 3px;
+      background-color: #f1f1f1;
+      margin-top: 10px;
+      padding: 0 10px;
+      color: #666;
+      text-decoration: none;
+      display: none; }
+      body.mobile .tiles .tile.summary a.back:active, body.mobile .tiles .tile.summary a.detail:active {
+        background-color: #ddd; }
+      body.mobile .tiles .tile.summary a.back i, body.mobile .tiles .tile.summary a.detail i {
+        margin-right: 3px; }
+    body.mobile .tiles .tile.member:before {
+      background-color: #44B2F5; }
+    body.mobile .tiles .tile.member .m {
+      height: 50px;
+      line-height: 50px;
+      position: relative; }
+      body.mobile .tiles .tile.member .m:before, body.mobile .tiles .tile.member .m:after {
+        content: "";
+        display: table; }
+      body.mobile .tiles .tile.member .m:after {
+        clear: both; }
+      body.mobile .tiles .tile.member .m img.avatar {
+        float: left;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px; }
+      body.mobile .tiles .tile.member .m .name {
+        margin-left: 50px;
+        font-size: 20px; }
+      body.mobile .tiles .tile.member .m a.show-member-detail {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        background-color: #f1f1f1;
+        padding: 0 10px;
+        color: #666;
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        right: 0px; }
+        body.mobile .tiles .tile.member .m a.show-member-detail:active {
+          background-color: #ddd; }
+        body.mobile .tiles .tile.member .m a.show-member-detail i {
+          margin-right: 3px; }
+
+body.mobile.index .mobile-main, body.mobile.member-detail .mobile-main {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden; }
+body.mobile.index .tiles, body.mobile.member-detail .tiles {
+  position: static;
+  display: block;
+  overflow: visible; }
+  body.mobile.index .tiles .tile.summary, body.mobile.member-detail .tiles .tile.summary {
+    margin-bottom: 0; }
+    body.mobile.index .tiles .tile.summary .desc, body.mobile.member-detail .tiles .tile.summary .desc {
+      display: none; }
+  body.mobile.index .tiles .tile.member, body.mobile.member-detail .tiles .tile.member {
+    display: none; }
+
+body.mobile.member-detail .tile.summary:before {
+  background-color: #44B2F5; }
+body.mobile.member-detail .tile.summary a.detail {
+  display: block; }
+body.mobile.member-detail .tile.member {
+  margin-top: 0; }
+  body.mobile.member-detail .tile.member .m {
+    display: none; }
+body.mobile.member-detail .tiles.member-summary .tile.member {
+  margin-top: 10px; }
+  body.mobile.member-detail .tiles.member-summary .tile.member .m {
+    display: block; }
+
+body.mobile.detail .tile.summary a.back {
+  display: block; }
