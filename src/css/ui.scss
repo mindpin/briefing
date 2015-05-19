@@ -585,6 +585,7 @@ body.mobile {
     }
 
     .tile.summary {
+      cursor: pointer;
       &:before {background-color: $area-hot;}
 
       a.back, a.detail{
