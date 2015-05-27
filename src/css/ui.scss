@@ -567,6 +567,11 @@ body.mobile {
             color: #999;
             margin-top: 5px;
           }
+
+          .snap {
+            font-size: 0;line-height: 0;
+            img {width:100%;}
+          }
         }
 
         .submit.bundle {

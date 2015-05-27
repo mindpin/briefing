@@ -5404,6 +5404,11 @@ body.mobile {
           body.mobile .tiles .tile .desc .submit .smemo {
             color: #999;
             margin-top: 5px; }
+          body.mobile .tiles .tile .desc .submit .snap {
+            font-size: 0;
+            line-height: 0; }
+            body.mobile .tiles .tile .desc .submit .snap img {
+              width: 100%; }
         body.mobile .tiles .tile .desc .submit.bundle {
           background-color: #F8FFE8; }
           body.mobile .tiles .tile .desc .submit.bundle a {
